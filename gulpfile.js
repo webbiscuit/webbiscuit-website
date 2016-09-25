@@ -4,74 +4,90 @@ const argv = require('minimist')(process.argv.slice(2));
 const Metalsmith = require('metalsmith');
 const siteconfig = require('./site-config');
 const del = require('del');
+const express = require('express');
+const browserSync = require('browser-sync');
+const gutil = require('gulp-util');
+
+var server = null;
 
 // Configuration
 const args = {
-  dev: !!argv.dev,
-  prod: !!argv.prod
+    production: !!argv.prod
 };
 
 // Metalsmith
 function setupMetalsmith(callback) {
-  var ms = new Metalsmith(process.cwd());
-  var msconfig = siteconfig.metalsmith || {};
-  var msplugins = msconfig.plugins || {};
+    var ms = new Metalsmith(process.cwd());
+    var msconfig = siteconfig.metalsmith || {};
+    var msplugins = msconfig.plugins || {};
 
-  ms.source(msconfig.config["source-dir"]);
-  ms.destination(msconfig.config["dest-dir"]);
-  ms.metadata(msconfig.metadata);
+    ms.source(msconfig.config["source-dir"]);
+    ms.destination(msconfig.config["dest-dir"]);
+    ms.metadata(msconfig.metadata);
 
-  Object.keys(msplugins).forEach(function(key) {
-    var plugin = require(key);
-    var options = msplugins[key];
+    Object.keys(msplugins).forEach(function (key) {
+        var plugin = require(key);
+        var options = msplugins[key];
 
-    ms.use(plugin(options));
-  });
+        ms.use(plugin(options));
+    });
 
-  ms.build(function(err) {
-    if (err) {
-      console.log(err);
-      throw err;
-    }
+    ms.build(function (err) {
+        if (err) {
+            console.log(err);
+            throw err;
+        }
 
-    callback();
-  });
+        callback();
+    });
 }
 
 //Gulp tasks
-gulp.task('metalsmith', function(callback) {
-  setupMetalsmith(callback);
+gulp.task('metalsmith', function (callback) {
+    setupMetalsmith(callback);
+    reload();
 });
 
-gulp.task('clean', function(callback) {
-  var msconfig = siteconfig.metalsmith || {};
-  del(msconfig.config["dest-dir"]);
+gulp.task('clean', function (callback) {
+    var msconfig = siteconfig.metalsmith || {};
+    del(msconfig.config["dest-dir"]);
 });
 
-gulp.task('serve', ['metalsmith'], function(callback) {
-  var http = require('http');
-  var serveStatic = require('serve-static');
-  var finalhandler = require('finalhandler');
+gulp.task('serve', ['metalsmith', 'watch'], function (callback) {
+    server = express();
+    server.use(express.static(siteconfig.metalsmith.config["dest-dir"]));
 
-  var serve = serveStatic(siteconfig.metalsmith.config["dest-dir"], {
-    "index": ['index.html', 'index.htm']
-  });
+    var serverPort = 8000; // Math.floor((Math.random() * 1000) + 3000);
+    if (argv.port) {
+        serverPort = parseInt(argv.port);
+    }
 
-  var server = http.createServer(function(req, res){
-    var done = finalhandler(req, res);
-    serve(req, res, done);
-  })
+    server.listen(serverPort, function () {
+        var server = "localhost:" + serverPort;
+        console.log("Server: %s", server);
+        browserSync({ proxy: server });
+        callback();
+    });
+});
 
-  var serverPort = 8090 // Math.floor((Math.random() * 1000) + 3000);
-  if (argv.port) {
-    serverPort = parseInt(argv.port);
-  }
-
-  server.listen(serverPort, function() {
-    console.log("Server: http://localhost:%s", serverPort);
-    callback();
-  });
+gulp.task('watch', ['default'], function () {
+    gulp.watch(['gulpfile.js', 'site-config.js'], ['default']);
+    //   gulp.watch([site.metalsmith.config.styleRoot+'/**/*'], ['styles']);
+    //   gulp.watch([site.metalsmith.config.scriptRoot+'/**/*'], ['scripts']);
+    gulp.watch([
+        siteconfig.metalsmith.config["source-dir"] + '/**/*',
+        siteconfig.metalsmith.config["layout-dir"] + '/**/*'
+    ], ['metalsmith']);
 });
 
 gulp.task('build', ['metalsmith']);
 gulp.task('default', ['metalsmith']);
+
+// Utils
+function reload() {
+    if (server) {
+        return browserSync.reload();
+    }
+
+    return gutil.noop();
+}
