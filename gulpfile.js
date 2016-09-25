@@ -1,7 +1,8 @@
 
-var gulp = require('gulp');
-var Metalsmith = require('metalsmith');
-var siteconfig = require('./site-config');
+const gulp = require('gulp');
+const Metalsmith = require('metalsmith');
+const siteconfig = require('./site-config');
+const del = require('del');
 
 // Metalsmith
 function setupMetalsmith(callback) {
@@ -33,6 +34,11 @@ function setupMetalsmith(callback) {
 //Gulp tasks
 gulp.task('metalsmith', function(callback) {
   setupMetalsmith(callback);
+});
+
+gulp.task('clean', function(callback) {
+  var msconfig = siteconfig.metalsmith || {};
+  del(msconfig.config["dest-dir"]);
 });
 
 gulp.task('default', ['metalsmith']);

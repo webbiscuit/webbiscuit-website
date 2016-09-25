@@ -6,12 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Web Biscuit",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:webbiscuit/webbiscuit-website.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "semantic-ui": "^2.2.4"
   },
   "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
     "handlebars": "^4.0.5",
     "metalsmith": "^2.2.0",
     "metalsmith-layouts": "^1.6.5",
