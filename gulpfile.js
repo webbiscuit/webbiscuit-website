@@ -8,7 +8,8 @@ const express = require('express');
 const browserSync = require('browser-sync');
 const gutil = require('gulp-util');
 const path = require('path');
-const webpack = require('webpack-stream');
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
 const named = require('vinyl-named');
 
 var server = null;
@@ -84,22 +85,27 @@ gulp.task('watch', ['default'], function () {
 });
 
 gulp.task('webpack', function (callback) {
-    // var webpackPlugins = [
-    //     // new webpack.ProvidePlugin({
-    //     //     $: "jquery",
-    //     //     jQuery: "jquery"
-    //     // }),
-    //     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
-    //     new webpack.DefinePlugin({
-    //         "process.env": {
-    //             NODE_ENV: JSON.stringify(args.production ? 'production' : 'development'),
-    //         },
-    //     })
-    // ];
+    console.dir(args);
+    
+    console.dir(argv);
+    
+    var webpackPlugins = [
+        // new webpack.ProvidePlugin({
+        //     $: "jquery",
+        //     jQuery: "jquery"
+        // }),
+        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify(args.production ? 'production' : 'development'),
+            },
+        })
+    ];
 
-    // if (args.production) {
-    //     webpackPlugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
-    // }
+    if (args.production) {
+        console.log("Uglifying");
+        webpackPlugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
+    }
 
     var webpackConfig = {
         context: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"]),
@@ -123,8 +129,8 @@ gulp.task('webpack', function (callback) {
                     }
                 }
             ]
-        } //,
-        //plugins: webpackPlugins
+        },
+        plugins: webpackPlugins
     };
 
 
@@ -134,7 +140,7 @@ gulp.task('webpack', function (callback) {
 
     gulp.src(source)
             .pipe(named())
-            .pipe(webpack(webpackConfig))
+            .pipe(webpackStream(webpackConfig))
             .pipe(gulp.dest(dest));
 
     // webpack(webpackConfig, function (err, stats) {

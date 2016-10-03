@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "gulp build",
     "serve-dev": "gulp serve",
-    "build-prod": "gulp build prod"
+    "build-prod": "gulp build --prod"
   },
   "author": "Web Biscuit",
   "repository": {
