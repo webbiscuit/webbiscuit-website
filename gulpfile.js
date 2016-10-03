@@ -7,6 +7,9 @@ const del = require('del');
 const express = require('express');
 const browserSync = require('browser-sync');
 const gutil = require('gulp-util');
+const path = require('path');
+const webpack = require('webpack-stream');
+const named = require('vinyl-named');
 
 var server = null;
 
@@ -80,7 +83,73 @@ gulp.task('watch', ['default'], function () {
     ], ['metalsmith']);
 });
 
-gulp.task('build', ['metalsmith']);
+gulp.task('webpack', function (callback) {
+    // var webpackPlugins = [
+    //     // new webpack.ProvidePlugin({
+    //     //     $: "jquery",
+    //     //     jQuery: "jquery"
+    //     // }),
+    //     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
+    //     new webpack.DefinePlugin({
+    //         "process.env": {
+    //             NODE_ENV: JSON.stringify(args.production ? 'production' : 'development'),
+    //         },
+    //     })
+    // ];
+
+    // if (args.production) {
+    //     webpackPlugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
+    // }
+
+    var webpackConfig = {
+        context: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"]),
+       // entry: ["vendor.js"],
+        output: {
+            //path: path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets'),
+            filename: '[name].js'
+        },
+        // // resolveLoader: {
+        // //     root: path.join(__dirname, 'node_modules')
+        // // },
+        // resolve: { modulesDirectories: [siteconfig.metalsmith.config["scripts-dir"]], extension: ['', '.js', '.scss'] },
+        module: {
+            loaders: [
+                {
+                    test: /\.jsx?$/,
+                    exclude: /(node_modules|bower_components)/,
+                    loader: 'babel',
+                    query: {
+                        presets: ['es2015']
+                    }
+                }
+            ]
+        } //,
+        //plugins: webpackPlugins
+    };
+
+
+
+    var source = path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], "vendor.js");
+    var dest = path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets');
+
+    gulp.src(source)
+            .pipe(named())
+            .pipe(webpack(webpackConfig))
+            .pipe(gulp.dest(dest));
+
+    // webpack(webpackConfig, function (err, stats) {
+    //     if (err) {
+    //         return callback(err);
+    //     }
+
+    //     console.log(stats.toString({}));
+    //     callback();
+    // });
+});
+
+gulp.task('scripts', ['webpack']);
+
+gulp.task('build', ['scripts', 'metalsmith']);
 gulp.task('default', ['metalsmith']);
 
 // Utils

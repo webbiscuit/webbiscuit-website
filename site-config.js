@@ -9,7 +9,9 @@ module.exports = {
     "config": {
       "source-dir": "./src",
       "layouts-dir": "./layouts",
-      "dest-dir": "./build"
+      "dest-dir": "./build",
+      "scripts-dir": "./scripts",
+      "assets-dir": "./sources"      
     },
     "plugins": {
       "metalsmith-markdown": {
@@ -21,6 +23,7 @@ module.exports = {
         "directory": "./layouts",
         "partials": "./layouts/partials"
       },
+      "metalsmith-code-highlight": {}
     }
   }
 }

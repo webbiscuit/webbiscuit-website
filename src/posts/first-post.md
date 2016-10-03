@@ -5,3 +5,17 @@ layout: post.html
 ---
 
 An interesting post about how it's going to be different this time around. I'm going to write a lot more nowadays and use this blog to improve my writing.
+
+Here is code:
+
+    for (i = 0; i < 100; i++)
+    {
+        std::cout << i;
+    }
+
+
+```csharp
+private void index(){
+  MessageBox.Show("hello world");
+}
+``` 

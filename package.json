@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "gulp build",
-    "serve-dev": "gulp serve"
+    "serve-dev": "gulp serve",
+    "build-prod": "gulp build prod"
   },
   "author": "Web Biscuit",
   "repository": {
@@ -15,16 +16,26 @@
   },
   "license": "MIT",
   "dependencies": {
-    "semantic-ui": "^2.2.4"
+    "babel-core": "^6.16.0",
+    "babel-loader": "^6.2.5",
+    "babel-runtime": "^6.11.6",
+    "semantic-ui": "^2.2.4",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^1.13.2",
+    "webpack-stream": "^3.2.0"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.16.0",
     "browser-sync": "^2.16.0",
     "del": "^2.2.2",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",
     "handlebars": "^4.0.5",
+    "highlight": "^0.2.4",
+    "highlight.js": "^9.7.0",
     "metalsmith": "^2.2.0",
+    "metalsmith-code-highlight": "0.0.3",
     "metalsmith-layouts": "^1.6.5",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.5.0",
