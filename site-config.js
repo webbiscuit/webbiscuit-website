@@ -11,19 +11,20 @@ module.exports = {
       "layouts-dir": "./layouts",
       "dest-dir": "./build",
       "scripts-dir": "./scripts",
-      "assets-dir": "./sources"      
+      "assets-dir": "./assets"      
     },
     "plugins": {
       "metalsmith-markdown": {
       },
+      // "metalsmith-prism": {
+      // },
       "metalsmith-permalinks": {
       },
       "metalsmith-layouts": {
         "engine": "handlebars",
         "directory": "./layouts",
         "partials": "./layouts/partials"
-      },
-      "metalsmith-code-highlight": {}
+      }
     }
   }
 }

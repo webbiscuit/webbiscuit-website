@@ -74,8 +74,8 @@ gulp.task('serve', ['metalsmith', 'watch'], function (callback) {
     });
 });
 
-gulp.task('watch', ['default'], function () {
-    gulp.watch(['gulpfile.js', 'site-config.js'], ['default']);
+gulp.task('watch', ['build'], function () {
+    gulp.watch(['gulpfile.js', 'site-config.js'], ['webpack']);
     //   gulp.watch([site.metalsmith.config.styleRoot+'/**/*'], ['styles']);
     //   gulp.watch([site.metalsmith.config.scriptRoot+'/**/*'], ['scripts']);
     gulp.watch([
@@ -84,11 +84,7 @@ gulp.task('watch', ['default'], function () {
     ], ['metalsmith']);
 });
 
-gulp.task('webpack', function (callback) {
-    console.dir(args);
-    
-    console.dir(argv);
-    
+gulp.task('webpack', function (callback) {    
     var webpackPlugins = [
         // new webpack.ProvidePlugin({
         //     $: "jquery",
@@ -127,13 +123,15 @@ gulp.task('webpack', function (callback) {
                     query: {
                         presets: ['es2015']
                     }
+                },
+                { 
+                    test: /\.css$/, 
+                    loader: "style-loader!css-loader" 
                 }
             ]
         },
         plugins: webpackPlugins
     };
-
-
 
     var source = path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], "vendor.js");
     var dest = path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets');
@@ -142,6 +140,8 @@ gulp.task('webpack', function (callback) {
             .pipe(named())
             .pipe(webpackStream(webpackConfig))
             .pipe(gulp.dest(dest));
+
+    callback();
 
     // webpack(webpackConfig, function (err, stats) {
     //     if (err) {
@@ -154,9 +154,8 @@ gulp.task('webpack', function (callback) {
 });
 
 gulp.task('scripts', ['webpack']);
-
 gulp.task('build', ['scripts', 'metalsmith']);
-gulp.task('default', ['metalsmith']);
+gulp.task('default', ['build']);
 
 // Utils
 function reload() {

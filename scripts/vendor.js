@@ -1,2 +1,5 @@
-console.log("WORKS");
-console.log([1, 2, 3].map(n => n + 1));
+
+require('highlightjs/styles/kimbie.dark.css');
+var hljs = require('highlightjs/highlight.pack.js');
+
+hljs.initHighlightingOnLoad();
