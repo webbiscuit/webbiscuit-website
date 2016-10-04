@@ -77,7 +77,7 @@ gulp.task('serve', ['metalsmith', 'watch'], function (callback) {
 gulp.task('watch', ['build'], function () {
     gulp.watch(['gulpfile.js', 'site-config.js'], ['webpack']);
     //   gulp.watch([site.metalsmith.config.styleRoot+'/**/*'], ['styles']);
-    //   gulp.watch([site.metalsmith.config.scriptRoot+'/**/*'], ['scripts']);
+    gulp.watch([siteconfig.metalsmith.config["scripts-dir"] + '/**/*'], ['scripts']);
     gulp.watch([
         siteconfig.metalsmith.config["source-dir"] + '/**/*',
         siteconfig.metalsmith.config["layout-dir"] + '/**/*'
