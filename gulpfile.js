@@ -11,6 +11,8 @@ const path = require('path');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const named = require('vinyl-named');
+const w3cjs = require('gulp-w3cjs');
+
 
 var server = null;
 
@@ -57,7 +59,7 @@ gulp.task('clean', function (callback) {
     del(msconfig.config["dest-dir"]);
 });
 
-gulp.task('serve', ['metalsmith', 'watch'], function (callback) {
+gulp.task('serve', ['build', 'watch'], function (callback) {
     server = express();
     server.use(express.static(siteconfig.metalsmith.config["dest-dir"]));
 
@@ -153,8 +155,19 @@ gulp.task('webpack', function (callback) {
     // });
 });
 
+
+gulp.task('validate', ['metalsmith'], function (callback) {   
+    var dest = path.join(__dirname, siteconfig.metalsmith.config["dest-dir"]);
+
+    gulp.src(dest + '/**/*.html')
+        .pipe(w3cjs())
+        .pipe(w3cjs.reporter());
+
+    callback();
+});
+
 gulp.task('scripts', ['webpack']);
-gulp.task('build', ['scripts', 'metalsmith']);
+gulp.task('build', ['scripts', 'metalsmith', 'validate']);
 gulp.task('default', ['build']);
 
 // Utils
