@@ -105,11 +105,19 @@ gulp.task('webpack', function (callback) {
         webpackPlugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
     }
 
+    const PATHS = {
+        vendor: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], 'vendor'),
+        buildDir: path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets'),
+    };
+
     var webpackConfig = {
-        context: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"]),
-       // entry: ["vendor.js"],
+        // context: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"]),
+        entry: 
+        {
+            vendor : PATHS.vendor
+        },
         output: {
-            //path: path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets'),
+            path: PATHS.buildDir,
             filename: '[name].js'
         },
         // // resolveLoader: {
