@@ -30,6 +30,7 @@ function setupMetalsmith(callback) {
 
     ms.source(msconfig.config["source-dir"]);
     ms.destination(msconfig.config["dest-dir"]);
+    ms.clean(false);
     ms.metadata(msconfig.metadata);
 
     Object.keys(msplugins).forEach(function (key) {
@@ -58,6 +59,8 @@ gulp.task('metalsmith', function (callback) {
 gulp.task('clean', function (callback) {
     var msconfig = siteconfig.metalsmith || {};
     del(msconfig.config["dest-dir"]);
+
+    callback();
 });
 
 gulp.task('serve', ['build', 'watch'], function (callback) {
@@ -83,7 +86,7 @@ gulp.task('watch', ['build'], function () {
     gulp.watch([siteconfig.metalsmith.config["scripts-dir"] + '/**/*'], ['scripts']);
     gulp.watch([
         siteconfig.metalsmith.config["source-dir"] + '/**/*',
-        siteconfig.metalsmith.config["layout-dir"] + '/**/*'
+        siteconfig.metalsmith.config["layouts-dir"] + '/**/*'
     ], ['metalsmith']);
 });
 
@@ -184,7 +187,7 @@ gulp.task('validate', ['metalsmith'], function (callback) {
 });
 
 gulp.task('scripts', ['webpack']);
-gulp.task('build', ['scripts', 'metalsmith', 'validate']);
+gulp.task('build', ['clean', 'scripts', 'metalsmith', 'validate']);
 gulp.task('default', ['build']);
 
 // Utils
