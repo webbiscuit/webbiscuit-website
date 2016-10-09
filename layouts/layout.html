@@ -1,55 +1,7 @@
-<!doctype html>
+{{#extend "default"}}
+  {{#content "main"}}
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+    <h1>Home</h1>
 
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  <meta name="author" content="Web Biscuit">
-
-  <link rel="stylesheet" type="text/css" href="assets/vendor.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-  <div class="ui container">
-    <p>HEllo</p>
-    <button class="ui primary button">WTF</button>
-  </div>
-
-  <script type="text/javascript" src="assets/vendor.js" charset="utf-8" async></script>
-</body>
-</html>
-
-<!--<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-</head>
-<body>
-  <header>
-    <p>
-      <a href="/">Home</a>
-    </p>
-  </header>
-  <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
-
-  {{{ contents }}}
-
-  <p class="test">Hello</p>
-
-  <script type="text/javascript" src="assets/vendor.js" charset="utf-8" async></script>
-
-  <footer>
-    <p>Generated with {{ generator }} &mdash; <a href="{{ url }}">{{ url }}</a></p>
-  </footer>
-
-</body>
-</html>-->
+  {{/content}}
+{{/extend}}

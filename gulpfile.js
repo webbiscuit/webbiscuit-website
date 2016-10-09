@@ -15,6 +15,9 @@ const named = require('vinyl-named');
 const w3cjs = require('gulp-w3cjs');
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+// Handlebars
+var Handlebars = require('handlebars');
+var HandlebarsLib = require('./lib/handlebars-config')(Handlebars);
 
 var server = null;
 
