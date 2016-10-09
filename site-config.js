@@ -20,6 +20,8 @@ module.exports = {
       // },
       "metalsmith-permalinks": {
       },
+      "metalsmith-rootpath": {
+      },
       "metalsmith-layouts": {
         "engine": "handlebars",
         "directory": "./layouts",
