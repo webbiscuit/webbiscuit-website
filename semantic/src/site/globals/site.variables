@@ -1,0 +1,15 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/* Colors */
+@green: #8BC34A;
+@orange: #FFAB40;
+
+@fontSize : 13px;
+@headerFont        : 'Acme', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Abhaya Libre', sans-serif;
+@googleFontFamily  : 'Abhaya+Libre|Acme';
+
+@primaryColor   : @green;
+@secondaryColor : @orange;

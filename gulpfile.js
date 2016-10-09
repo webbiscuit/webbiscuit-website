@@ -1,5 +1,6 @@
 
 const gulp = require('gulp');
+const gulpSequence = require('gulp-sequence');
 const argv = require('minimist')(process.argv.slice(2));
 const Metalsmith = require('metalsmith');
 const siteconfig = require('./site-config');
@@ -187,7 +188,7 @@ gulp.task('validate', ['metalsmith'], function (callback) {
 });
 
 gulp.task('scripts', ['webpack']);
-gulp.task('build', ['clean', 'scripts', 'metalsmith', 'validate']);
+gulp.task('build', gulpSequence(['clean'], ['scripts', 'metalsmith', 'validate']));
 gulp.task('default', ['build']);
 
 // Utils

@@ -36,6 +36,7 @@
     "del": "^2.2.2",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
+    "gulp-sequence": "^0.4.6",
     "gulp-util": "^3.0.7",
     "handlebars": "^4.0.5",
     "metalsmith": "^2.2.0",
