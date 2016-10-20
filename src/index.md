@@ -1,6 +1,7 @@
 ---
 layout: layout.html
 title: Web Biscuit
+cat_blog: true
 ---
 
 <h2>Read what I have to say...</h2>
