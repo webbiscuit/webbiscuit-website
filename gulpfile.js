@@ -202,3 +202,39 @@ function reload() {
 
     return gutil.noop();
 }
+
+gulp.task('build-cv', function (callback) {   
+    var dest = path.join(__dirname, "cv-build");
+    var src = path.join(__dirname, siteconfig.metalsmith.config["source-dir"], "resume.md");
+
+    const pandoc = require('gulp-pandoc');
+
+    del(dest);
+
+    gulp.src(src)
+        .pipe(pandoc({
+            from: 'markdown',
+            to: 'html5',
+            ext: '.html',
+            args: ['--smart']
+        }))
+        .pipe(gulp.dest(dest));
+
+    gulp.src(src)
+        .pipe(pandoc({
+            from: 'markdown',
+            to: 'latex',
+            ext: '.pdf',
+            args: ['--smart', '-o', dest + '/resume.pdf']
+        }));
+
+    gulp.src(src)
+        .pipe(pandoc({
+            from: 'markdown',
+            to: 'docx',
+            ext: '.docx',
+            args: ['--smart', '-o', dest + '/resume.docx']
+        }));
+
+    callback();
+});

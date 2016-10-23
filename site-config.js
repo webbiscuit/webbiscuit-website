@@ -11,10 +11,11 @@ module.exports = {
       "layouts-dir": "./layouts",
       "dest-dir": "./build",
       "scripts-dir": "./scripts",
-      "assets-dir": "./assets"      
+      "assets-dir": "./assets" 
     },
     "plugins": {
       "metalsmith-markdown": {
+        "smartypants": true
       },
       // "metalsmith-prism": {
       // },
