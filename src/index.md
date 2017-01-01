@@ -4,8 +4,10 @@ title: Web Biscuit
 cat_blog: true
 ---
 
-<h2>Read what I have to say...</h2>
+# Web Biscuit
 
-<a href="/posts/first-post/">The first post</a>
+Hi! Welcome to the Web Biscuit website. My name is [Daniel Childs](mailto:daniel@webbiscuit.co.uk), a professional software developer based in Nottingham, and this is my personal webpage. It is an entirely static site 
+written in [Markdown](https://daringfireball.net/projects/markdown/), bulit using [Metalsmith](http://www.metalsmith.io/), scripted by gulp and optimised by webpack. It uses node and npm as
+the build environment.
 
-<a href="/posts/second-post/">The next post</a>
+It is also open source! [https://github.com/webbiscuit/webbiscuit-website](https://github.com/webbiscuit/webbiscuit-website).
