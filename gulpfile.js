@@ -147,7 +147,7 @@ gulp.task('webpack', function (callback) {
                 { 
                     test: /\.css$/, 
                     // loader: "style-loader!css-loader" ,
-                    exclude: /(node_modules|bower_components)/,
+                    // exclude: /(node_modules|bower_components)/,
                     loader: ExtractTextPlugin.extract('style', 'css'),
                 },
                 { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
