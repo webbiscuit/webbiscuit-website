@@ -220,12 +220,13 @@ gulp.task('build-cv', function (callback) {
         }))
         .pipe(gulp.dest(dest));
 
+    var pdfFileName = 'resume.pdf';
     gulp.src(src)
         .pipe(pandoc({
             from: 'markdown',
             to: 'latex',
             ext: '.pdf',
-            args: ['--smart', '-o', dest + '/resume.pdf']
+            args: ['--smart', '-o', dest + "/" + pdfFileName]
         }));
 
     gulp.src(src)
@@ -235,6 +236,12 @@ gulp.task('build-cv', function (callback) {
             ext: '.docx',
             args: ['--smart', '-o', dest + '/resume.docx']
         }));
+
+    // Copy pdf to web dir as well
+    var webDest = path.join(__dirname, siteconfig.metalsmith.config["source-dir"], "files");
+    del(webDest + "/" + pdfFileName)
+    gulp.src(dest + "/" + pdfFileName)
+        .pipe(gulp.dest(webDest));    
 
     callback();
 });

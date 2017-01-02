@@ -1,7 +1,8 @@
 # TODO
 
-* Add download link for resume
-* Add articles
 * Upload to main web
-* Automate pushing to AWS
 * Configure nginx (docker)
+* nginx redirects
+* Comments
+* Automate pushing to AWS
+* Google Analytics
