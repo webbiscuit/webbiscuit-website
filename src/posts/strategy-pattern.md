@@ -294,7 +294,7 @@ Back at the office, Bernie Hobnob was so delighted with our hard work that he ga
 
 ### References
 
-<a name="ref1"></a>[1]: Design Patterns (the Gang of Four book), Strategy Pattern, page 267
+<a id="ref1"></a>[1]: Design Patterns (the Gang of Four book), Strategy Pattern, page 267
 
 ### Further Reading
 

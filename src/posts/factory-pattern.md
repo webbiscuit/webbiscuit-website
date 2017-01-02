@@ -395,9 +395,9 @@ Soon after completing the website, Bernie has already placed the next product in
 
 ### Notes & References
 
-<a name="ref1"></a>[1]: Design Patterns (the Gang of Four book), Factory Pattern, page 94
+<a id="ref1"></a>[1]: Design Patterns (the Gang of Four book), Factory Pattern, page 94
 
-<a name="ref2"></a>[2]: In real life data may be read from a database or from XML. The design pattern still holds – instead of each factory hard-coding the return strings and collections there can be calls to your database or methods to read data from whatever file format you choose. It cannot be iterated enough that good design patterns truly are implementation agnostic.
+<a id="ref2"></a>[2]: In real life data may be read from a database or from XML. The design pattern still holds – instead of each factory hard-coding the return strings and collections there can be calls to your database or methods to read data from whatever file format you choose. It cannot be iterated enough that good design patterns truly are implementation agnostic.
 
 ### Further Reading
 
