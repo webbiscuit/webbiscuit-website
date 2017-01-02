@@ -11,3 +11,19 @@ written in [Markdown](https://daringfireball.net/projects/markdown/), bulit usin
 the build environment.
 
 It is also open source! [https://github.com/webbiscuit/webbiscuit-website](https://github.com/webbiscuit/webbiscuit-website).
+
+
+## Articles
+
+Here are some of the articles I wrote for Code Project a while ago.
+
+I should revise these at some point, but they are here in their original form for now.
+
+### Design Patterns
+
+- [Strategy Pattern](./posts/strategy-pattern/)
+- [Factory Pattern](./posts/factory-pattern/)
+
+### C++
+
+- [Debugging Memory Leaks in VC++](./posts/cpp-memory-leaks/)
