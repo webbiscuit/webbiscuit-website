@@ -3,3 +3,5 @@
 * Comments
 * Automate pushing to AWS
 * Google Analytics
+* HTTPS
+

@@ -13,7 +13,7 @@ const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const named = require('vinyl-named');
 const w3cjs = require('gulp-w3cjs');
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Handlebars
 var Handlebars = require('handlebars');
@@ -106,7 +106,7 @@ gulp.task('webpack', function (callback) {
                 NODE_ENV: JSON.stringify(args.production ? 'production' : 'development'),
             },
         }),
-        new ExtractTextPlugin('[name].css')
+        new ExtractTextPlugin('bundle.css', {allChunks: true, disable: false})
     ];
 
     if (args.production) {
@@ -146,9 +146,9 @@ gulp.task('webpack', function (callback) {
                 },
                 { 
                     test: /\.css$/, 
-                    // loader: "style-loader!css-loader" ,
-                    // exclude: /(node_modules|bower_components)/,
-                    loader: ExtractTextPlugin.extract('style', 'css'),
+                    //loader: ExtractTextPlugin.extract('style', 'css')
+                    loader: ExtractTextPlugin.extract('css-loader')
+                    
                 },
                 { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
                 { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
