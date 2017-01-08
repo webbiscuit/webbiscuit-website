@@ -100,7 +100,8 @@ gulp.task('webpack', function (callback) {
             $: "jquery",
             jQuery: "jquery"
         }),
-        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
+        new webpack.optimize.CommonsChunkPlugin({
+            names: ['bodyscripts', 'headscripts']}),
         new webpack.DefinePlugin({
             "process.env": {
                 NODE_ENV: JSON.stringify(args.production ? 'production' : 'development'),
@@ -115,7 +116,8 @@ gulp.task('webpack', function (callback) {
     }
 
     const PATHS = {
-        vendor: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], 'vendor'),
+        bodyscripts: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], 'bodyscripts'),
+        headscripts: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], 'headscripts'),
         buildDir: path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets'),
     };
 
@@ -123,7 +125,8 @@ gulp.task('webpack', function (callback) {
         // context: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"]),
         entry: 
         {
-            vendor : PATHS.vendor
+            bodyscripts : PATHS.bodyscripts,
+            headscripts: PATHS.headscripts
         },
         output: {
             path: PATHS.buildDir,
@@ -159,10 +162,18 @@ gulp.task('webpack', function (callback) {
         plugins: webpackPlugins
     };
 
-    var source = path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], "vendor.js");
     var dest = path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets');
 
-    gulp.src(source)
+    var bodyscriptsSource = path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], "bodyscripts.js");
+
+    gulp.src(bodyscriptsSource)
+            .pipe(named())
+            .pipe(webpackStream(webpackConfig))
+            .pipe(gulp.dest(dest));
+    
+    var headScriptsSource = path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], "headscripts.js");
+
+    gulp.src(headScriptsSource)
             .pipe(named())
             .pipe(webpackStream(webpackConfig))
             .pipe(gulp.dest(dest));
