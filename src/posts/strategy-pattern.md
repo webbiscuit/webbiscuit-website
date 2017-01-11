@@ -129,7 +129,7 @@ public byte[] Hash(string input)
 }
 ```
 
-With no way to recall our dll or force the rewrite hundreds of lines of code we are required to support an unsecure API forever. As time goes on, we need to implement more and more hashing algorithms. Before we know it, the Hash function turns into a giant if/ifelse statement, has babies and moves into your house. We find we need to change a core class everytime we discover a new hashing alrogrithm. A maintenenance nightmare quickly develops. Within a few weeks the company collapses and one Monday morning we are standing in the dole queue talking to PHP developers.
+With no way to recall our dll or force the rewrite hundreds of lines of code we are required to support an unsecure API forever. As time goes on, we need to implement more and more hashing algorithms. Before we know it, the Hash function turns into a giant if/ifelse statement, has babies and moves into your house. We find we need to change a core class everytime we discover a new hashing algorithm. A maintenance nightmare quickly develops. Within a few weeks the company collapses and one Monday morning we are standing in the dole queue talking to PHP developers.
 
 ### The Strategy Solution
 
@@ -213,7 +213,7 @@ public void TestMd5StrategyPattern()
 }
 ```
 
-We use the hash generator webbpage to generate data so we can verify SHA256 signatures. Notice the only bit of code that really changes in this test is the hashing object passed into the Hash function:
+We use the hash generator webpage to generate data so we can verify SHA256 signatures. Notice the only bit of code that really changes in this test is the hashing object passed into the Hash function:
 
 ```csharp
 [TestMethod]

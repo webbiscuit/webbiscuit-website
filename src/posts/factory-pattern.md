@@ -368,7 +368,7 @@ Astute readers may have realised we have returned to a fundamental problem. Look
 ProductFactory factory = new ClothingFactory();
 ```
 
-We’re using the new keyword and instantiating an object! The very reason we’re creating factories is to remove the creation of concrete objects! Has this been a worthless excercise?
+We’re using the new keyword and instantiating an object! The very reason we’re creating factories is to remove the creation of concrete objects! Has this been a worthless exercise?
 
 No. To make software work you cannot get around the fact you have to create a real object somewhere. There has to be an entry point into your code. Imagine we create a framework we want to lock down, yet want to allow other developers to extend. In our API, we can expose a function called SetFactory(…), taking in a class derived from AbstractFactory, which allows a developer to create a derivation of this very class and pass it into our closed framework. The framework then uses this unknown class via its known interface to create all of its objects. If you understand this you are well on the way to learning the open/closed principle – objects open to extension yet closed to modification.
 

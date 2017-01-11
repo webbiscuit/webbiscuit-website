@@ -1,6 +1,6 @@
 ---
 layout: layout.html
-title: Resumé
+title: Résumé
 url: resume
 cat_cv: true
 ---
