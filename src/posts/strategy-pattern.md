@@ -3,6 +3,7 @@ layout: post.html
 title: Strategy Pattern - Design Patterns
 url: strategy-pattern
 date: 2010-01-17
+description: Learn when and how to use the Strategy Design Pattern
 ---
 
 # Design Patterns 1

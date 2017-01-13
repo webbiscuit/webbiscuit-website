@@ -3,6 +3,7 @@ layout: layout.html
 title: Résumé
 url: resume
 cat_cv: true
+description: CV for Daniel Childs
 ---
 
 # Daniel Robert Childs
