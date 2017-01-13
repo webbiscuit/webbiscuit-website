@@ -14,6 +14,7 @@ const webpackStream = require('webpack-stream');
 const named = require('vinyl-named');
 const w3cjs = require('gulp-w3cjs');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const semanticBuild = require('./semantic/tasks/build');
 
 // Handlebars
 var Handlebars = require('handlebars');
@@ -201,6 +202,7 @@ gulp.task('validate', ['metalsmith'], function (callback) {
     callback();
 });
 
+gulp.task('semantic', semanticBuild);
 gulp.task('scripts', ['webpack']);
 gulp.task('build', gulpSequence(['clean'], ['scripts', 'metalsmith', 'validate']));
 gulp.task('default', ['build']);

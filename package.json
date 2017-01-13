@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp semantic",
     "build-dev": "gulp build",
     "serve-dev": "gulp serve",
     "build-prod": "gulp build --prod"
@@ -35,6 +36,7 @@
     "css-loader": "^0.25.0",
     "del": "^2.2.2",
     "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-pandoc": "^0.2.2",
     "gulp-sequence": "^0.4.6",
