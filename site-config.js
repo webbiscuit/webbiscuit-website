@@ -2,7 +2,7 @@ module.exports = {
   "metalsmith": {
     "metadata": {
       "site": {
-        "url": "https://www.webbiscuit.co.uk",
+        "url": "http://www.webbiscuit.co.uk",
         "github-url": "https://github.com/webbiscuit/webbiscuit-website"
       }
     },
@@ -17,8 +17,6 @@ module.exports = {
       "metalsmith-markdown": {
         "smartypants": true
       },
-      // "metalsmith-prism": {
-      // },
       "metalsmith-permalinks": {
       },
       "metalsmith-rootpath": {
@@ -27,6 +25,9 @@ module.exports = {
         "engine": "handlebars",
         "directory": "./layouts",
         "partials": "./layouts/partials"
+      },
+      "metalsmith-mapsite": {
+        "hostname": "http://www.webbiscuit.co.uk"
       }
     }
   }
