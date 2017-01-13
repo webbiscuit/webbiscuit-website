@@ -117,7 +117,7 @@ Technologies used:
 - Perforce, Source Safe, Mantis
 
 ### Junior Software Developer - Bitarts    
-**December 2003 – July 2005**  
+**December 2004 – July 2005**  
 
 Bitarts was a software security firm, specialising in copy protection and anti-piracy software wrappers.
 As a graduate, my main task here was to create a web front end (PHP) for an Oracle database, which provided administrative support for online software activation.
