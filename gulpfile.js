@@ -96,99 +96,82 @@ gulp.task('watch', ['build'], function () {
 });
 
 gulp.task('webpack', function (callback) {    
-    var webpackPlugins = [
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
-        }),
+
+    // Hashes
+
+
+    const PATHS = {
+        bodyVendor: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], 'bodyvendor.js'),
+        headVendor: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], 'headvendor.js'),
+        buildDir: path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets'),
+    };
+
+    const commonPlugins = [
         new webpack.optimize.CommonsChunkPlugin({
-            names: ['bodyscripts', 'headscripts']}),
+            names: ['bodyvendor', 'headvendor']
+        }),
+        new ExtractTextPlugin('styles.css'),
         new webpack.DefinePlugin({
             "process.env": {
                 NODE_ENV: JSON.stringify(args.production ? 'production' : 'development'),
             },
-        }),
-        new ExtractTextPlugin('bundle.css', {allChunks: true, disable: false})
+        })
     ];
 
+    const prodPlugins = [
+        new webpack.LoaderOptionsPlugin({
+            minimize: true,
+            debug: false
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            beautify: false,
+            mangle: {
+                screw_ie8: true,
+                keep_fnames: true
+            },
+            compress: {
+                screw_ie8: true
+            },
+            comments: false
+        })
+    ];
+
+    var plugins = commonPlugins;
     if (args.production) {
-        console.log("Uglifying");
-        webpackPlugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
+        console.log("Adding prod settings");
+        plugins = plugins.concat(prodPlugins);
     }
 
-    const PATHS = {
-        bodyscripts: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], 'bodyscripts'),
-        headscripts: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], 'headscripts'),
-        buildDir: path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets'),
-    };
-
     var webpackConfig = {
-        // context: path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"]),
         entry: 
         {
-            bodyscripts : PATHS.bodyscripts,
-            headscripts: PATHS.headscripts
+            bodyvendor : PATHS.bodyVendor,
+            headvendor: PATHS.headVendor
         },
         output: {
             path: PATHS.buildDir,
             filename: '[name].js'
         },
-        // // resolveLoader: {
-        // //     root: path.join(__dirname, 'node_modules')
-        // // },
-        // resolve: { modulesDirectories: [siteconfig.metalsmith.config["scripts-dir"]], extension: ['', '.js', '.scss'] },
         module: {
-            loaders: [
-                {
-                    test: /\.jsx?$/,
-                    exclude: /(node_modules|bower_components)/,
-                    loader: 'babel',
-                    query: {
-                        compact: false,
-                        presets: ['es2015']
-                    }
-                },
-                { 
-                    test: /\.css$/, 
-                    //loader: ExtractTextPlugin.extract('style', 'css')
-                    loader: ExtractTextPlugin.extract('css-loader')
-                    
-                },
-                { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
-                { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
-                { test: /\.(png)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
-                
-            ]
+            rules: [{
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    use: 'css-loader'
+                })
+            },
+            { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
+            { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
+            { test: /\.(png)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }],
         },
-        plugins: webpackPlugins
+        plugins: plugins
     };
 
-    var dest = path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'assets');
-
-    var bodyscriptsSource = path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], "bodyscripts.js");
-
-    gulp.src(bodyscriptsSource)
-            .pipe(named())
-            .pipe(webpackStream(webpackConfig))
-            .pipe(gulp.dest(dest));
-    
-    var headScriptsSource = path.join(__dirname, siteconfig.metalsmith.config["scripts-dir"], "headscripts.js");
-
-    gulp.src(headScriptsSource)
-            .pipe(named())
-            .pipe(webpackStream(webpackConfig))
-            .pipe(gulp.dest(dest));
+    gulp.src([PATHS.headVendor, PATHS.bodyVendor])
+        .pipe(named())
+        .pipe(webpackStream(webpackConfig, webpack))
+        .pipe(gulp.dest(PATHS.buildDir));
 
     callback();
-
-    // webpack(webpackConfig, function (err, stats) {
-    //     if (err) {
-    //         return callback(err);
-    //     }
-
-    //     console.log(stats.toString({}));
-    //     callback();
-    // });
 });
 
 
