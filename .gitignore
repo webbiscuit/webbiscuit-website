@@ -2,3 +2,4 @@ node_modules
 semantic/dist
 build
 cv-build
+.vscode
