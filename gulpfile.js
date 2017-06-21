@@ -107,6 +107,10 @@ gulp.task('webpack', function (callback) {
     };
 
     const commonPlugins = [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
         new webpack.optimize.CommonsChunkPlugin({
             names: ['bodyvendor', 'headvendor']
         }),
@@ -166,7 +170,7 @@ gulp.task('webpack', function (callback) {
         plugins: plugins
     };
 
-    gulp.src([PATHS.headVendor, PATHS.bodyVendor])
+    gulp.src([path.join(__dirname, siteconfig.metalsmith.config["dest-dir"], 'index.html'),])
         .pipe(named())
         .pipe(webpackStream(webpackConfig, webpack))
         .pipe(gulp.dest(PATHS.buildDir));
