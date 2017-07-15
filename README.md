@@ -36,4 +36,4 @@ The resume that appears on the site can be built into multiple formats using the
 - PDF
 - docx
 
-Build all these with `npm build-cv`
+Build all these with `gulp build-cv`
