@@ -1,0 +1,56 @@
+{
+  "name": "wb_site",
+  "version": "1.0.0",
+  "description": "Web Biscuit Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp semantic",
+    "build-dev": "gulp build",
+    "serve-dev": "gulp serve",
+    "build-prod": "gulp build --prod"
+  },
+  "author": "Web Biscuit",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:webbiscuit/webbiscuit-website.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-runtime": "^6.23.0",
+    "file-loader": "^0.11.2",
+    "gulp-w3cjs": "^1.3.0",
+    "gulp-webpack": "^1.5.0",
+    "highlightjs": "^9.10.0",
+    "jquery": "^3.2.1",
+    "semantic-ui": "^2.2.10",
+    "url-loader": "^0.5.9",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^3.0.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "css-loader": "^0.28.4",
+    "del": "^3.0.0",
+    "express": "^4.15.3",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "gulp": "^3.9.1",
+    "gulp-pandoc": "^0.2.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-util": "^3.0.8",
+    "handlebars": "^4.0.10",
+    "handlebars-layouts": "^3.1.4",
+    "metalsmith": "^2.3.0",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-mapsite": "^1.0.4",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-rootpath": "^1.0.4",
+    "minimist": "^1.2.0",
+    "style-loader": "^0.18.2"
+  }
+}

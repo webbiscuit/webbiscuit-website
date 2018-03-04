@@ -1,5 +1,5 @@
 ---
-layout: layout.hbs
+layout: layout.html
 title: Daniel Childs CV
 url: resume
 cat_cv: true
