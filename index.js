@@ -16,7 +16,7 @@ Metalsmith(__dirname)
   .use(markdown())
   .use(permalinks())
   .use(layouts({
-    engine: 'handlebars'
+    engine: 'nunjucks'
   }))
   .build(function(err, files) {
     if (err) { throw err; }

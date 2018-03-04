@@ -1,5 +1,5 @@
 ---
-layout: layout.hbs
+layout: layout.njk
 title: Web Biscuit
 cat_blog: true
 description: Personal website for Daniel Childs, software developer 

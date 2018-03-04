@@ -1,5 +1,5 @@
 ---
-layout: post.hbs
+layout: post.njk
 title: Strategy Pattern - Design Patterns
 url: strategy-pattern
 date: 2010-01-17
