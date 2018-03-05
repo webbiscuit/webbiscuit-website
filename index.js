@@ -1,12 +1,13 @@
-var Metalsmith  = require('metalsmith');
-var markdown    = require('metalsmith-markdown');
-var layouts     = require('metalsmith-layouts');
-var permalinks  = require('metalsmith-permalinks');
+const Metalsmith  = require('metalsmith');
+const markdown    = require('metalsmith-markdown');
+const layouts     = require('metalsmith-layouts');
+const permalinks  = require('metalsmith-permalinks');
+const rootpath    = require('metalsmith-rootpath');
 
 Metalsmith(__dirname)
   .metadata({
-    title: "My Static Site & Blog",
-    description: "It's about saying »Hello« to the World.",
+    title: "WebBiscuit Site",
+    description: "WebBiscuit website, built with Metalsmith",
     generator: "Metalsmith",
     url: "http://www.metalsmith.io/"
   })
@@ -15,6 +16,7 @@ Metalsmith(__dirname)
   .clean(false)
   .use(markdown())
   .use(permalinks())
+  .use(rootpath())
   .use(layouts({
     engine: 'nunjucks'
   }))

@@ -1,10 +1,10 @@
 <header>
     <nav class="ui orange inverted secondary pointing menu">
         <div class="ui container">
-            <a href="{{rootPath}}" class="{{#if cat_blog}}header active {{/if}}item">
+            <a href="{{rootPath}}" class="{% if cat_blog %}header active {% endif %}item">
                 Web Biscuit
             </a>
-            <a href="{{rootPath}}resume" class="{{#if cat_cv}}header active {{/if}}item">
+            <a href="{{rootPath}}resume" class="{% if cat_cv %}header active {% endif %}item">
                 My CV
             </a>
         </div>
