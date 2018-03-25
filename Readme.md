@@ -2,11 +2,17 @@
 
 Source for my static website.
 
+TODO
+Add webpaack
+rename index.js
+
+
 ## Features
 - Built using metalsmith
-- Optimsed using webpack
-- Pages written in markdown
-- Build tasks written in Gulp
+- Packed using webpack
+- Content written in markdown
+- Pages written in nunjucks
+- * Build tasks written in Gulp
 - npm used as package manager
 - SemanticUI used as layout framework
 - Uses live-server as debug server, with live reloading
@@ -18,6 +24,13 @@ Source for my static website.
 ## Installation
 
 Run `npm install`. This will install the dependencies and build the 3rd party files.
+
+npm run build
+
+npm run server
+
+
+
 
 ### Semantic UI
 
