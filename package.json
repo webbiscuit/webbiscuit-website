@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && npm run build:webpack-dev && npm run build:metalsmith",
     "build:prod": "NODE_ENV=production && npm run clean && npm run build:webpack-prod && npm run build:metalsmith",
-    "build:metalsmith": "node metalsmith.js",
+    "build:metalsmith": "babel-node metalsmith.js",
     "build:webpack-dev": "npm run clean:webpack && webpack --mode development",
     "build:webpack-prod": "npm run clean:webpack && webpack --mode production",
     "clean": "npm run clean:metalsmith && npm run clean:webpack",
@@ -31,6 +31,9 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.13"
   }
