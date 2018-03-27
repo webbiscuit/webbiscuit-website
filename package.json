@@ -4,8 +4,15 @@
   "description": "Web Biscuit Website",
   "main": "index.html",
   "scripts": {
-    "build": "node index.js",
-    "serve": "live-server build"
+    "build": "npm run clean && npm run build:webpack-dev && npm run build:metalsmith",
+    "build:prod": "NODE_ENV=production && npm run clean && npm run build:webpack-prod && npm run build:metalsmith",
+    "build:metalsmith": "node metalsmith.js",
+    "build:webpack-dev": "npm run clean:webpack && webpack --mode development",
+    "build:webpack-prod": "npm run clean:webpack && webpack --mode production",
+    "clean": "npm run clean:metalsmith && npm run clean:webpack",
+    "clean:metalsmith": "rimraf dist/site/*",
+    "clean:webpack": "rimraf dist/assets/*",
+    "serve": "live-server dist/site"
   },
   "author": "Web Biscuit",
   "repository": {
@@ -20,6 +27,11 @@
     "metalsmith-layouts": "^2.1.0",
     "metalsmith-markdown": "^0.2.2",
     "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-rootpath": "^1.0.4"
+    "metalsmith-rootpath": "^1.0.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
   }
 }

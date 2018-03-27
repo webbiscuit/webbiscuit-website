@@ -4,6 +4,9 @@ const layouts = require('metalsmith-layouts');
 const permalinks = require('metalsmith-permalinks');
 const rootpath = require('metalsmith-rootpath');
 const assets = require('metalsmith-assets');
+const paths = require('./config/paths')
+
+const __PROD__ = process.env.NODE_ENV === 'production'
 
 Metalsmith(__dirname)
   .metadata({
@@ -12,9 +15,9 @@ Metalsmith(__dirname)
     generator: "Metalsmith",
     url: "http://www.metalsmith.io/"
   })
-  .source('./src')
-  .destination('./build')
-  .clean(true)
+  .clean(__PROD__)
+  .source(paths.metalsmithSource)
+  .destination(paths.metalsmithDestination)
   .use(markdown())
   .use(permalinks())
   .use(rootpath())
@@ -22,9 +25,9 @@ Metalsmith(__dirname)
     engine: 'nunjucks'
   }))
   .use(assets({
-    source: "./assets",
+    source: "./dist/assets",
     destination: "./assets"
   }))
-  .build(function(err, files) {
+  .build(function (err, files) {
     if (err) { throw err; }
   });

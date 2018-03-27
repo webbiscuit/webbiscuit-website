@@ -3,18 +3,18 @@
 Source for my static website.
 
 TODO
-Add webpaack
-rename index.js
-
+CSS/SCSS
+JS stuff
+Layout
+CV
 
 ## Features
 - Built using metalsmith
-- Packed using webpack
+- Packed with webpack
 - Content written in markdown
-- Pages written in nunjucks
-- * Build tasks written in Gulp
+- Pages templated in nunjucks
 - npm used as package manager
-- SemanticUI used as layout framework
+- SemanticUI used as layout framework *
 - Uses live-server as debug server, with live reloading
 
 ## Pre-reqs
