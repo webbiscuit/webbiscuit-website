@@ -5,13 +5,14 @@
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run build:webpack-dev && npm run build:metalsmith",
-    "build:prod": "NODE_ENV=production && npm run clean && npm run build:webpack-prod && npm run build:metalsmith",
-    "build:metalsmith": "babel-node metalsmith.js",
+    "build:prod": "NODE_ENV=production npm run clean && npm run build:webpack-prod && npm run build:metalsmith",
+    "build:metalsmith": "babel-node build-metalsmith.js",
     "build:webpack-dev": "npm run clean:webpack && webpack --mode development",
     "build:webpack-prod": "npm run clean:webpack && webpack --mode production",
     "clean": "npm run clean:metalsmith && npm run clean:webpack",
     "clean:metalsmith": "rimraf dist/site/*",
     "clean:webpack": "rimraf dist/assets/*",
+    "dev": "NODE_ENV=development babel-node run-dev-server.js",
     "serve": "live-server dist/site"
   },
   "author": "Web Biscuit",
@@ -21,6 +22,9 @@
   },
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "jstransformer-nunjucks": "^0.5.0",
     "metalsmith": "^2.3.0",
     "metalsmith-assets": "^0.1.0",
@@ -28,13 +32,14 @@
     "metalsmith-markdown": "^0.2.2",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-rootpath": "^1.0.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "webpack": "^4.2.0",
-    "webpack-cli": "^2.0.13"
+    "browser-sync": "^2.23.6",
+    "bs-fullscreen-message": "^1.1.0",
+    "debug": "^3.1.0",
+    "webpack-dev-middleware": "^3.1.0"
   }
 }

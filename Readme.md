@@ -5,8 +5,10 @@ Source for my static website.
 TODO
 CSS/SCSS
 JS stuff
-Layout
+JS fingerprints
+Layout (semantic/bootstrap)
 CV
+Linting (css, js, html)
 
 ## Features
 - Built using metalsmith
@@ -21,15 +23,23 @@ CV
 
 `npm install -g live-server`
 
-## Installation
+## Development
 
 Run `npm install`. This will install the dependencies and build the 3rd party files.
 
-npm run build
+### Hot reloading
 
-npm run server
+`npm run dev`
 
+### Testing server
 
+`npm run build`
+
+`npm run serve`
+
+## Production
+
+`npm run build:prod`
 
 
 ### Semantic UI

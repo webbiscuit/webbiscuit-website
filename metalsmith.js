@@ -8,7 +8,7 @@ const paths = require('./config/paths')
 
 const __PROD__ = process.env.NODE_ENV === 'production'
 
-Metalsmith(__dirname)
+export default Metalsmith(__dirname)
   .metadata({
     title: "WebBiscuit Site",
     description: "WebBiscuit website, built with Metalsmith",
@@ -28,6 +28,3 @@ Metalsmith(__dirname)
     source: "./dist/assets",
     destination: "./assets"
   }))
-  .build(function (err, files) {
-    if (err) { throw err; }
-  });
