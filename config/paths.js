@@ -13,6 +13,5 @@ module.exports = {
   webpackDestination: join(projectRoot, 'dist', 'assets'),
   webpackPublicPath: '/assets/',
   // Server
-  serverRoot: join(projectRoot, 'dist', 'site'),
-  pageBasePath: process.env.NODE_ENV !== 'production' ? '' : '/metalsmith-webpack-suite'
+  serverRoot: join(projectRoot, 'dist', 'site')
 }

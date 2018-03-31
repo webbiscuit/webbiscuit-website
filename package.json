@@ -13,7 +13,7 @@
     "clean:metalsmith": "rimraf dist/site/*",
     "clean:webpack": "rimraf dist/assets/*",
     "dev": "NODE_ENV=development babel-node run-dev-server.js",
-    "serve": "live-server dist/site"
+    "serve": "browser-sync dist/site"
   },
   "author": "Web Biscuit",
   "repository": {
@@ -27,6 +27,7 @@
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
     "bs-fullscreen-message": "^1.1.0",
+    "css-loader": "^0.28.11",
     "debug": "^3.1.0",
     "jstransformer-nunjucks": "^0.5.0",
     "metalsmith": "^2.3.0",
@@ -35,9 +36,12 @@
     "metalsmith-markdown": "^0.2.2",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-rootpath": "^1.0.4",
+    "mini-css-extract-plugin": "^0.4.0",
     "path": "^0.12.7",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
-    "webpack-dev-middleware": "^3.1.0"
-  }
+    "webpack-dev-middleware": "^3.1.0",
+    "write-file-webpack-plugin": "^4.2.0"
+  },
+  "dependencies": {}
 }

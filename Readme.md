@@ -1,9 +1,8 @@
 # Web Biscuit Website
 
-Source for my static website.
+Source for my website.
 
 TODO
-CSS/SCSS
 JS stuff
 JS fingerprints
 Layout (semantic/bootstrap)
@@ -14,14 +13,10 @@ Linting (css, js, html)
 - Built using metalsmith
 - Packed with webpack
 - Content written in markdown
-- Pages templated in nunjucks
+- Pages templated using nunjucks
 - npm used as package manager
 - SemanticUI used as layout framework *
-- Uses live-server as debug server, with live reloading
-
-## Pre-reqs
-
-`npm install -g live-server`
+- Uses browser-sync as debug server, with live reloading
 
 ## Development
 

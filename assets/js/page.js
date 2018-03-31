@@ -1,3 +1,6 @@
+require('../css/page.css');
+
+
 //require('./highlight.js');
 // require('jquery/dist/jquery.min.js');
 // require('./../semantic/dist/semantic.min.css');
