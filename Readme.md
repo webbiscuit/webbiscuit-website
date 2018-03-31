@@ -2,12 +2,16 @@
 
 Source for my website.
 
+Hugely inspired by https://github.com/axe312ger/metalsmith-webpack-suite.
+
+
 TODO
-JS stuff
-JS fingerprints
+Fingerprints
 Layout (semantic/bootstrap)
-CV
 Linting (css, js, html)
+CV
+Greenkeeper?
+SASS/LESS
 
 ## Features
 - Built using metalsmith
@@ -15,7 +19,7 @@ Linting (css, js, html)
 - Content written in markdown
 - Pages templated using nunjucks
 - npm used as package manager
-- SemanticUI used as layout framework *
+- SemanticUI for frontend framework *
 - Uses browser-sync as debug server, with live reloading
 
 ## Development
