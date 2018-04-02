@@ -5,6 +5,7 @@ const permalinks = require('metalsmith-permalinks');
 const rootpath = require('metalsmith-rootpath');
 const assets = require('metalsmith-assets');
 const paths = require('./config/paths')
+const fingerprint = require('metalsmith-fingerprint-ignore')
 
 const __PROD__ = process.env.NODE_ENV === 'production'
 
@@ -22,9 +23,14 @@ export default Metalsmith(__dirname)
   .use(permalinks())
   .use(rootpath())
   .use(layouts({
-    engine: 'nunjucks'
+    engine: 'nunjucks',
   }))
   .use(assets({
     source: "./dist/assets",
     destination: "./assets"
   }))
+  .use(fingerprint({ pattern: 'assets/page.css' }))
+  .use(fingerprint({ pattern: 'assets/head.js' }))
+  .use(fingerprint({ pattern: 'assets/page.js' }))
+
+  
