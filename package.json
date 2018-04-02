@@ -5,10 +5,10 @@
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run build:webpack-dev && npm run build:metalsmith",
-    "build:prod": "NODE_ENV=production npm run clean && npm run build:webpack-prod && npm run build:metalsmith",
+    "build:prod": "npm run clean && npm run build:webpack-prod && npm run build:metalsmith",
     "build:metalsmith": "babel-node build-metalsmith.js",
-    "build:webpack-dev": "npm run clean:webpack && webpack --mode development",
-    "build:webpack-prod": "npm run clean:webpack && webpack --mode production",
+    "build:webpack-dev": "npm run clean:webpack && NODE_ENV=development webpack --mode development",
+    "build:webpack-prod": "npm run clean:webpack && NODE_ENV=production webpack --mode production",
     "clean": "npm run clean:metalsmith && npm run clean:webpack",
     "clean:metalsmith": "rimraf dist/site/*",
     "clean:webpack": "rimraf dist/assets/*",

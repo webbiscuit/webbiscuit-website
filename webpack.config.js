@@ -1,6 +1,7 @@
 const path = require('path');
 const { join } = require('path')
 const paths = require('./config/paths')
+const Webpack = require('webpack')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WriteFilePlugin = require('write-file-webpack-plugin')
 
@@ -42,10 +43,20 @@ const config = {
 };
 
 if (__DEV__) {
+  config.plugins.push(new Webpack.LoaderOptionsPlugin({
+    debug: true
+  }));
   // Force webpack-dev-middleware to write files to the disk for metalsmith
   config.plugins.push(new WriteFilePlugin({
     log: false
   }));
+}
+
+if (__PROD__) {
+  config.plugins.push(new Webpack.LoaderOptionsPlugin({
+    minimize: true
+  }));
+  config.plugins.push(new Webpack.optimize.AggressiveMergingPlugin());
 }
 
 module.exports = config;
