@@ -43,9 +43,9 @@ Let’s use the hash generator here to create our expected data:
 
 I am using "Web Biscuit" as the test string. The expected MD5 is
 
-```text
-  md5: 26c6d2e0cfbbe42fff4bb9c1e8dece7d
-  sha256: 2072a868e8c5fa8331cad489bc63e6aff3ba8ccc057142c284ad0379e5becf8a
+```no-highlight
+md5: 26c6d2e0cfbbe42fff4bb9c1e8dece7d
+sha256: 2072a868e8c5fa8331cad489bc63e6aff3ba8ccc057142c284ad0379e5becf8a
 ```
 
 Now we need the test harness. We are using one helper function here:

@@ -6,7 +6,6 @@ Hugely inspired by https://github.com/axe312ger/metalsmith-webpack-suite.
 
 
 TODO
-Fingerprints
 Layout (semantic/bootstrap)
 Linting (css, js, html)
 CV
