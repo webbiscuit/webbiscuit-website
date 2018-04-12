@@ -13,7 +13,9 @@
     "clean:metalsmith": "rimraf dist/site/*",
     "clean:webpack": "rimraf dist/assets/*",
     "dev": "NODE_ENV=development babel-node run-dev-server.js",
-    "lint": "npx html-validator-cli --file=dist/site/index.html --validator='http://html5.validator.nu' --verbose -s",
+    "lint": "npm run lint:css && npm run lint:html",
+    "lint:html": "npx html-validator-cli --file=dist/site/index.html --validator='http://html5.validator.nu' --verbose -s",
+    "lint:css": "npx sass-lint assets/css/** --verbose",
     "prepush": "npm run lint",
     "serve": "browser-sync dist/site"
   },
@@ -46,6 +48,7 @@
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.8.3",
     "path": "^0.12.7",
+    "sass-lint": "^1.12.1",
     "sass-loader": "^6.0.7",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14",

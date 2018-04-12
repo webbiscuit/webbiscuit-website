@@ -1,10 +1,10 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
-$secondary-color: #ff00ff;
+$secondary-color: #f0f;
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
   background-color: $secondary-color;
+  color: $primary-color;
+  font: 100% $font-stack;
   line-height: 4;
 }
