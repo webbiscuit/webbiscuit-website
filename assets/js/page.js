@@ -1,4 +1,4 @@
-require('../css/page.css');
+require('../css/page.scss');
 require('./highlight.js');
 
 // require('jquery/dist/jquery.min.js');
