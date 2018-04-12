@@ -13,7 +13,8 @@
     "clean:metalsmith": "rimraf dist/site/*",
     "clean:webpack": "rimraf dist/assets/*",
     "dev": "NODE_ENV=development babel-node run-dev-server.js",
-    "lint": "npx html-validator-cli --file dist/**/* --verbose",
+    "lint": "npx html-validator-cli --file=dist/site/index.html --validator='http://html5.validator.nu' --verbose -s",
+    "prepush": "npm run lint",
     "serve": "browser-sync dist/site"
   },
   "author": "Web Biscuit",
