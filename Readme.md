@@ -7,8 +7,8 @@ Hugely inspired by https://github.com/axe312ger/metalsmith-webpack-suite.
 
 TODO
 Layout (semantic/bootstrap)
-Linting (css, js)
-CV
+Linting (js)
+CV 
 Greenkeeper?
 Push to AWS
 RSS
