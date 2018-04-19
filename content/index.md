@@ -22,9 +22,9 @@ I should revise these at some point, but they are here in their original form fo
 
 ### Design Patterns
 
-- [Strategy Pattern](./posts/strategy-pattern/)
-- [Factory Pattern](./posts/factory-pattern/)
+- [Strategy Pattern](./strategy-pattern/)
+- [Factory Pattern](./factory-pattern/)
 
 ### C++
 
-- [Debugging Memory Leaks in VC++](./posts/cpp-memory-leaks/)
+- [Debugging Memory Leaks in VC++](./cpp-memory-leaks/)

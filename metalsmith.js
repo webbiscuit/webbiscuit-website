@@ -15,7 +15,8 @@ export default Metalsmith(__dirname)
     title: "WebBiscuit Site",
     description: "WebBiscuit website, built with Metalsmith",
     generator: "Metalsmith",
-    url: "http://www.metalsmith.io/"
+    url: "http://www.metalsmith.io/",
+    rootpath: "/"
   })
   .clean(__PROD__)
   .source(paths.metalsmithSource)

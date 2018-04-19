@@ -14,7 +14,7 @@ A series of articles exploring Design Patterns and creating useful examples in C
 
 When using design patterns, you are encouraged to program against interfaces and avoid specific implementations like a broken biscuit. Alas, at some point in your program you do need to create a concrete object somewhere, otherwise the program cannot actually do anything. This is where the factory pattern excels, and as a result becomes a very common pattern and one you need to know.
 
-The optional [source files accompanying this article can be found here.](./../../files/FactoryPattern.zip)
+The optional [source files accompanying this article can be found here.](/files/FactoryPattern.zip)
 
 ### Defined
 
