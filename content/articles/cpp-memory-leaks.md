@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: layout.njk
 title: Debugging memory leaks in Visual C++
 url: cpp-memory-leaks
 date: 2010-02-07

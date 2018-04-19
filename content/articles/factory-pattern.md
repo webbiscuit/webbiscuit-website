@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: layout.njk
 title: Factory Pattern - Design Patterns
 url: factory-pattern
 date: 2010-02-07
