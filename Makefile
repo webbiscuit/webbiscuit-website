@@ -1,6 +1,6 @@
 
 build: node_modules
-	node index.js
+	npm run build:prod
 
 node_modules: package.json
 	npm install
