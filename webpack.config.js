@@ -11,7 +11,7 @@ const __PROD__ = process.env.NODE_ENV === 'production'
 const config = {
   entry: {
     head: join(paths.webpackSource, 'js', 'head.js'),
-    page: join(paths.webpackSource, 'js', 'page.js'),
+    main: join(paths.webpackSource, 'js', 'main.js'),
   },
   output: {
     path: paths.webpackDestination,

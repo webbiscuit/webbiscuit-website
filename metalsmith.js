@@ -29,9 +29,9 @@ export default Metalsmith(__dirname)
     source: "./dist/assets",
     destination: "./assets"
   }))
-  .use(fingerprint({ pattern: 'assets/page.css' }))
+  .use(fingerprint({ pattern: 'assets/main.css' }))
   .use(fingerprint({ pattern: 'assets/head.js' }))
-  .use(fingerprint({ pattern: 'assets/page.js' }))
+  .use(fingerprint({ pattern: 'assets/main.js' }))
   .use(layouts({
     engine: 'nunjucks',
   }))

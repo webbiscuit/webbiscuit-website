@@ -12,6 +12,7 @@ CV
 Greenkeeper?
 Push to AWS
 RSS
+Readme
 
 ## Features
 - Built using metalsmith
