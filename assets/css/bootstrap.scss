@@ -1,2 +1,44 @@
 //@import "custom";
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Barlow:Black|Lato');
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower|Montserrat');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+}
+
+.logo {
+    font-size: 150px;
+   // line-height: 1;
+}
+.logo-web {
+    letter-spacing: 0.001em;
+    //line-height: 50%;;
+   // line-height: 0;    
+}
+.logo-biscuit {
+    letter-spacing: 0.01em;
+    padding-left: 0.25em;
+
+    line-height: 0.01em;
+    
+    //line-height: 50%;;
+    
+}
+.logo-first {  
+    font-family: 'Gamja Flower';
+}
+.logo-chars {
+    font-size: 0.55em;
+    font-family: 'Montserrat';
+}
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}

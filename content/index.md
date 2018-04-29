@@ -1,4 +1,10 @@
 ---
+layout: front-page.njk
+title: Web Biscuit
+description: Personal website for Daniel Childs, software developer 
+---
+
+<!-- ---
 layout: layout.njk
 title: Web Biscuit
 cat_blog: true
@@ -22,9 +28,9 @@ I should revise these at some point, but they are here in their original form fo
 
 ### Design Patterns
 
-- [Strategy Pattern](./strategy-pattern/)
-- [Factory Pattern](./factory-pattern/)
+- [Strategy Pattern](./articles/strategy-pattern/)
+- [Factory Pattern](./articles/factory-pattern/)
 
 ### C++
 
-- [Debugging Memory Leaks in VC++](./cpp-memory-leaks/)
+- [Debugging Memory Leaks in VC++](./articles/cpp-memory-leaks/) -->
