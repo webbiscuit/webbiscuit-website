@@ -16,26 +16,36 @@ GitHub: [github.com/webbiscuit](https://github.com/webbiscuit)
 
 ## Experience
 
-### Software Developer/Team Lead - Romax Technology/Romax InSight
-**January 2014 – Present**  
+### Developer/Tech Lead - BJSS
+**October 2017 – Present ** 
 
-Romax InSight monitor and consult on wind turbines all over the world. They can also recommend, design and install new and improved designs to increase the turbine life.  
-Fleet Monitor is the flagship web software package for InSight used by wind monitoring engineers to analyse and report on the state of wind turbines.
+BJSS are an agile-centric software consultancy who have a number of high-profile clients. They have the largest number of AWS certified staff outside of Amazon.
+
+#### Projects
+- Technical lead for government contract to enable customers to view and manage financial data for their business. This involved a nodejs express webserver running in AWS lambda and surfacing data from legacy systems. Working to GDS guidelines and passing the alpha stage.
+- Technical lead for high-profile government project, building an ionic web application and microservices, to fundamentally transform process and the day-to-day jobs of staff. Working to GDS guidelines and passing the alpha stage.
+- Represented the company at Hack24, taking first prize in the Microsoft Azure category for creative use of cognitive services
+
+### Software Developer/Team Lead - Romax Technology/Romax InSight
+**January 2014 – September 2017 **  
+
+Romax InSight monitor and offer consultation and engineering services on wind turbines all over the world. They can also recommend, design and install improved designs to increase the turbine life.  
+Fleet Monitor is the flagship web software package for InSight used by wind monitoring engineers to analyse and report on the health of wind turbines.
 
 Romax InSight was acquired by Castrol in Feb 2017.
 
 #### Achievements & Responsibilities
 - Promoted to software lead, managing a team to turn product requirements from managers, end users and sales into cohesive software
 - Working with distributed team members and requirements from US and Korea
-- Onboarding customers and integrating their data into Romax systems and software
+- Onboarding customers and integrating their data streams into Romax systems and software
 - Ensuring software is reliable and delivered in a timely fashion
 - Architect of entire system, from database to servers to front end and supporting products
 - Embracing AWS services to improve scalability, data flow and deployment process
 - Overseeing and delivering technical handover and sharing software knowledge during company acquisition
 - Supporting hardware, consultancy and research departments with bespoke software and expertise as needed
 - Identifying and implementing new and relevant technologies and methodologies
-    - Changing software philosophy to a microservice architecture with restful APIs around all servers
-    - Migrating legacy code to JavaScript framework, Angular
+    - Changing software philosophy to a microservice architecture with restful APIs
+    - Migrating legacy code to JavaScript framework (Angular)
     - Moving source code system to GIT
     - Moving to a more responsive Kanban approach for software delivery
     - Improving documentation and knowledge transfer
@@ -66,7 +76,7 @@ It is an extremely complex product containing millions of lines of code written 
 - Producing installation documentation and support for on-site engineers using industrial secure and locked down systems
 - Writing standalone database administration tool
 - Worked across teams with staff in UK, US & Belgium
-- Replaced compatibility issues with new Windows versions and made the software 64-bit ready
+- Fixed compatibility issues with new Windows versions and made the software 64-bit ready
 
 #### Skills
 - C++, STL, MFC, Boost, COM, C#
