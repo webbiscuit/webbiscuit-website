@@ -3,6 +3,7 @@ layout: layout.njk
 title: Articles
 url: articles
 description: Articles by Daniel Childs
+cat_articles: true
 ---
 
 # Articles

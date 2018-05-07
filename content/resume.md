@@ -2,8 +2,8 @@
 layout: layout.njk
 title: Daniel Childs CV
 url: resume
-cat_cv: true
 description: CV for Daniel Childs
+cat_cv: true
 ---
 
 # Daniel Robert Childs

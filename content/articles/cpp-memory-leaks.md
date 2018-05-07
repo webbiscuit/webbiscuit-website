@@ -4,6 +4,7 @@ title: Debugging memory leaks in Visual C++
 url: cpp-memory-leaks
 date: 2010-02-07
 description: Learn how to debug memory leaks in C++
+cat_articles: true
 ---
 # Debugging memory leaks in Visual C++
 

@@ -2,6 +2,7 @@
 layout: layout.njk
 title: About Web Biscuit
 description: Tech used in the Web Biscuit website
+cat_about: true
 ---
 
 # About Web Biscuit

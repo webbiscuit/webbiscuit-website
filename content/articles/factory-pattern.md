@@ -4,6 +4,7 @@ title: Factory Pattern - Design Patterns
 url: factory-pattern
 date: 2010-02-07
 description: Learn when and how to use the Factory Design Pattern
+cat_articles: true
 ---
 
 # Design Patterns 2
