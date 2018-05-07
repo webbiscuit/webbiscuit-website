@@ -4,14 +4,6 @@ Source for my website.
 
 Hugely inspired by https://github.com/axe312ger/metalsmith-webpack-suite.
 
-
-TODO
-Linting (js)
-CV 
-Greenkeeper?
-Push to AWS
-Readme
-
 ## Features
 - Built using metalsmith
 - Packed with webpack
@@ -57,4 +49,15 @@ The resume that appears on the site can be built into multiple formats using the
 - PDF
 - docx
 
-Build all these with `gulp build-cv`
+Build all these with `npm run build:cv`
+
+Make sure you have pandoc installed.
+
+You might also need some supporting libraries for pandoc:
+- texlive-latex-base
+- texlive-fonts-recommended
+
+## TODO
+
+- Greenkeeper?
+- Push to AWS

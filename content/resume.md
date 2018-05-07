@@ -24,7 +24,7 @@ BJSS are an agile-centric software consultancy who have a number of high-profile
 #### Projects
 - Technical lead for government contract to enable customers to view and manage financial data for their business. This involved a nodejs express webserver running in AWS lambda and surfacing data from legacy systems. Working to GDS guidelines and passing the alpha stage.
 - Technical lead for high-profile government project, building an ionic web application and microservices, to fundamentally transform process and the day-to-day jobs of staff. Working to GDS guidelines and passing the alpha stage.
-- Represented the company at Hack24 as a team of four, taking first prize in the Microsoft Azure category for creative use of cognitive services
+- Represented the company at Hack24 in a team of four, taking first prize in the Microsoft Azure category for creative use of cognitive services
 
 ### Software Developer/Team Lead - Romax Technology/Romax InSight
 **January 2014 – September 2017 **  

@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run build:webpack-dev && npm run build:metalsmith",
+    "build:cv": "npx babel-node build-cv.js",
     "build:prod": "npm run clean && npm run build:webpack-prod && npm run build:metalsmith",
     "build:metalsmith": "babel-node build-metalsmith.js",
     "build:webpack-dev": "npm run clean:webpack && NODE_ENV=development webpack --mode development",
@@ -48,7 +49,9 @@
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-rootpath": "^1.0.4",
     "mini-css-extract-plugin": "^0.4.0",
+    "node-pandoc": "^0.3.0",
     "node-sass": "^4.9.0",
+    "normalize-scss": "^7.0.1",
     "path": "^0.12.7",
     "popper.js": "^1.14.3",
     "postcss-loader": "^2.1.5",

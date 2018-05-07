@@ -13,5 +13,7 @@ module.exports = {
   webpackDestination: join(projectRoot, 'dist', 'assets'),
   webpackPublicPath: '/assets/',
   // Server
-  serverRoot: join(projectRoot, 'dist', 'site')
+  serverRoot: join(projectRoot, 'dist', 'site'),
+  // cvDestination
+  cvDestination: join(projectRoot, 'content', 'files'),  
 }
