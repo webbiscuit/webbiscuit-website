@@ -6,8 +6,10 @@ nav {
 
   ul {
     margin: 0;
+   // margin-left: 20px;
     padding: 15px;
     display: flex;
+    max-width: 90%;
     flex-wrap: wrap;
     justify-content: flex-start;
     list-style: none;
@@ -28,13 +30,12 @@ nav {
         background-color: darken($nav-menu-colour, 10%);
       }
 
-      > .selected > a {
-        background-color: lighten($nav-menu-colour, 20%);
-        //margin-left: 100px;
+      &.right-align {
+        margin-left: auto;
       }
 
-      > .right-align {
-        margin-left: auto;
+      &.selected > a {
+        background-color: lighten($nav-menu-colour, 20%);
       }
     }
   }

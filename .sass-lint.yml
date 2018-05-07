@@ -1,7 +1,7 @@
 rules:
   hex-length: 0
   leading-zero: 0
-  nesting-depth: 3
+  nesting-depth: 0
   no-url-domains: 0
   no-url-protocols: 0
   property-sort-order: 0

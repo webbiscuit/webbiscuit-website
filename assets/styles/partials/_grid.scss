@@ -1,5 +1,6 @@
 .flex-grid {
   display: flex;
+  justify-content: center;  
 }
 
 @media (max-width: 400px) {
@@ -8,12 +9,9 @@
   }
 }
 
-.col {
-  flex: 1;
-}
-
 .main-col {
-  flex: 9;
+  flex: 1;
+  max-width: 90%;
 }
 
 body {
