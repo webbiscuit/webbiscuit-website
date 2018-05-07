@@ -6,12 +6,10 @@ Hugely inspired by https://github.com/axe312ger/metalsmith-webpack-suite.
 
 
 TODO
-Layout (semantic/bootstrap)
 Linting (js)
 CV 
 Greenkeeper?
 Push to AWS
-RSS
 Readme
 
 ## Features
@@ -20,7 +18,7 @@ Readme
 - Content written in markdown
 - Pages templated using nunjucks
 - npm used as package manager
-- SemanticUI for frontend framework *
+- Flexgrid layout
 - Uses browser-sync as debug server, with live reloading
 
 ## Development
@@ -41,10 +39,6 @@ Run `npm install`. This will install the dependencies and build the 3rd party fi
 
 `npm run build:prod`
 
-
-### Semantic UI
-
-Semantic UI is used for the layout. If you make any changes to the semantic source files, rebuild with `gulp semantic`.
 
 ## Site building
 `npm run build`
