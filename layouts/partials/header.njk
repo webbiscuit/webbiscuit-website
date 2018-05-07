@@ -1,15 +1,10 @@
 <header>
-    <nav class="ui orange inverted secondary pointing menu">
-        <div class="ui container">
-            <a href="{{rootPath}}" class="{% if cat_blog %}header active {% endif %}item">
-                Web Biscuit
-            </a>
-            <a href="{{rootPath}}resume" class="{% if cat_cv %}header active {% endif %}item">
-                Daniel's CV
-            </a>
-             <a href="{{rootPath}}about" class="{% if cat_cv %}header active {% endif %}item">
-                About Web Biscuit
-            </a>
-        </div>
+    <nav class="">
+        <ul>
+            <li><a href="{{rootPath}}">Web Biscuit</a></li>
+            <li><a href="{{rootPath}}resume">CV</a></li>
+            <li><a href="{{rootPath}}about">Writing</a></li>
+            <li class="right-align"><a href="{{rootPath}}about">About</a></li>
+        </ul>
     </nav>
 </header>

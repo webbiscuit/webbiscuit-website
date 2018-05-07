@@ -1,8 +1,12 @@
 {% extends "partials/default.njk" %}
 {% block content %}
 
-<div class="ui container">
-  {{ contents | safe }}
+<div class="flex-grid">
+  <div class="col"></div>
+    <div class="main-col">
+      {{ contents | safe }}    
+    </div>
+  <div class="col"></div>
 </div>
 
 {% endblock %}

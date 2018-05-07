@@ -1,0 +1,42 @@
+$nav-menu-colour: #FFBF00;
+$nav-text-colour:black;
+
+nav {
+  width: 100%;
+  background-color: $nav-menu-colour;
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px;
+
+    > li {
+      text-align: center;
+      cursor: pointer;
+
+      > a {
+        text-decoration: none;
+        padding: 10px;
+        color: $nav-text-colour;  
+      }
+
+      :hover {
+        background-color: darken($nav-menu-colour, 10%);
+      }
+    }
+
+    > li:first-child {
+      //background-color: pink;
+      //margin-left: 100px;
+    }
+
+    > li.right-align {
+      margin-left: auto;
+    }
+  }
+}
