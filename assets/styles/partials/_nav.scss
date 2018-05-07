@@ -6,12 +6,11 @@ nav {
 
   ul {
     margin: 0;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     list-style: none;
-    padding: 15px;
 
     > li {
       text-align: center;
@@ -20,7 +19,7 @@ nav {
       > a {
         text-decoration: none;
         padding: 15px;
-        color: $nav-text-colour;  
+        color: $nav-text-colour;
         font-family: 'Barlow', sans-serif;
         font-weight: 900;
       }
@@ -28,15 +27,15 @@ nav {
       :hover {
         background-color: darken($nav-menu-colour, 10%);
       }
-    }
 
-    > li.selected > a{
-      background-color: lighten($nav-menu-colour, 20%);
-      //margin-left: 100px;
-    }
+      > .selected > a {
+        background-color: lighten($nav-menu-colour, 20%);
+        //margin-left: 100px;
+      }
 
-    > li.right-align {
-      margin-left: auto;
+      > .right-align {
+        margin-left: auto;
+      }
     }
   }
 }

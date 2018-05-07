@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  line-height: 1.3em;    
+  line-height: 1.3em;
   font-size: 16px;
 }
 
@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  font-size:18px;
+  font-size: 18px;
 }
 
 h4,
@@ -36,7 +36,7 @@ h6 {
 
 .vertical-text {
   transform: rotate(180deg);
-  writing-mode:vertical-rl; /* vertical text */
+  writing-mode: vertical-rl;
   line-height: 2em;
   text-align: right;
   margin-top: 5em;
