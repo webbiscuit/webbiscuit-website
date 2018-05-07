@@ -1,7 +1,7 @@
 import nodePandoc from 'node-pandoc';
 
 const paths = require('./config/paths');
-const src = paths.metalsmithSource + '/resume.md';
+const src = paths.metalsmithSource + '/resume/index.md';
 const dest = paths.cvDestination + '/resume.pdf';
 
 // Arguments can be either a single String or in an Array

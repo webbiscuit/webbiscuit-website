@@ -8,7 +8,7 @@ cat_cv: true
 
 # Daniel Robert Childs
 
-Download: [resume.pdf](./../../files/resume.pdf)  
+Download: [resume.pdf](/files/resume.pdf)  
 Email: [daniel@webbiscuit.co.uk](mailto:daniel@webbiscuit.co.uk)  
 Website: [www.webbiscuit.co.uk](http://www.webbiscuit.co.uk)  
 LinkedIn: [www.linkedin.com/in/daniel-childs](https://www.linkedin.com/in/daniel-childs-4719ba3b)  
