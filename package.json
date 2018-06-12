@@ -18,7 +18,8 @@
     "lint:html": "npx html-validator-cli --file=dist/site/index.html --validator='http://html5.validator.nu' --verbose -s",
     "lint:css": "npx sass-lint assets/styles/**/*.scss --verbose",
     "prepush": "npm run lint",
-    "serve": "browser-sync dist/site"
+    "serve": "browser-sync dist/site",
+    "deploy": "aws s3 sync dist/site s3://webbiscuit-site --delete"
   },
   "author": "Web Biscuit",
   "repository": {

@@ -57,7 +57,3 @@ You might also need some supporting libraries for pandoc:
 - texlive-latex-base
 - texlive-fonts-recommended
 
-## TODO
-
-- Greenkeeper?
-- Push to AWS
