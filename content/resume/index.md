@@ -20,13 +20,16 @@ GitHub: [github.com/webbiscuit](https://github.com/webbiscuit)
 
 **October 2017 – Present**
 
-BJSS are an agile-centric software consultancy who have a number of high-profile clients. I work here as a software consultant, and have led some of our software projects.
+BJSS are an agile-centric software consultancy who have a number of high-profile clients. I work here as a software consultant, and have led some of our software projects. I've been doing lots of exciting cloud tranformation projects, mostly in AWS but some Azure ones too.
 
 #### Projects
 
-- Technical lead for government contract to enable customers to view and manage financial data for their business. This involved a nodejs express webserver running in AWS lambda and surfacing data from legacy systems. Working to GDS guidelines and passing the alpha stage.
-- Technical lead for high-profile government project, building an ionic web application and microservices, to fundamentally transform process and the day-to-day jobs of staff. Working to GDS guidelines and passing the alpha stage.
-- Represented the company at Hack24 in a team of four, taking first prize in the Microsoft Azure category for creative use of cognitive services
+- Technical lead for government contract to enable customers to view and manage financial data for their business. This involved a nodejs express webserver running in AWS lambda and surfacing data from legacy systems. Working to GDS guidelines.
+- Technical lead for high-profile government project, building an ionic web application and microservices, to fundamentally transform process and the day-to-day jobs of staff. Working to GDS guidelines.
+- Represented the company at Hack24 in a team of four, taking first prize in the Microsoft Azure category for creative use of cognitive services. Won an XBox.
+- Technical lead for chatbot proof of concept to help with FAQs at a call centre.
+- Technical lead for transforming a monolith into microservices for a currency exchange company.
+- Data engineer using Azure Databricks for big data processing and generating credit reports for a financial company.
 
 ### Software Developer/Team Lead - Romax Technology/Romax InSight
 
