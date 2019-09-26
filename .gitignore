@@ -4,4 +4,4 @@ dist
 build
 cv-build
 .vscode
-resume.pdf
+*.pdf
