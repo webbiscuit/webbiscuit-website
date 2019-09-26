@@ -15,7 +15,7 @@
     "clean:webpack": "rimraf dist/assets/*",
     "dev": "NODE_ENV=development babel-node run-dev-server.js",
     "lint": "npm run lint:css && npm run lint:html",
-    "lint:html": "npx html-validator-cli --file=dist/site/index.html --validator='http://html5.validator.nu' --verbose -s",
+    "lint:html": "npx html-validator-cli --file=dist/site/index.html --verbose -s",
     "lint:css": "npx sass-lint assets/styles/**/*.scss --verbose",
     "prepush": "npm run lint",
     "serve": "browser-sync dist/site",
