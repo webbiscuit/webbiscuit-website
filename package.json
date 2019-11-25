@@ -19,7 +19,7 @@
     "lint:css": "npx sass-lint assets/styles/**/*.scss --verbose",
     "prepush": "npm run lint",
     "serve": "browser-sync dist/site",
-    "deploy": "aws s3 sync dist/site s3://webbiscuit-site --delete"
+    "deploy": "aws s3 sync dist/site s3://webbiscuit-site --delete --cache-control max-age=604800"
   },
   "author": "Web Biscuit",
   "repository": {
