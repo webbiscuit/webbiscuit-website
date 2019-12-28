@@ -1,10 +1,10 @@
 # Header
 menu:
   Home: /
-  CV: /cv
-  Old Articles: /articles
-  Archives: /archives
-  About: /about
+  CV: /cv/
+  Old Articles: /articles/
+  Archives: /archives/
+  About: /about/
 rss: /atom.xml
 
 # Content
