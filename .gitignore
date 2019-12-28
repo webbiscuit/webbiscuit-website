@@ -1,7 +1,0 @@
-node_modules
-semantic/dist
-dist
-build
-cv-build
-.vscode
-*.pdf
