@@ -5,8 +5,8 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "deploy": "aws s3 sync public s3://webbiscuit-site --delete --profile webbiscuit"
   },
   "hexo": {
     "version": "4.2.0"
