@@ -1,5 +1,7 @@
 # Web Biscuit Website
 
+![Node.js CI](https://github.com/webbiscuit/webbiscuit-website/workflows/Node.js%20CI/badge.svg)
+
 Source for Web Biscuit website.
 
 ## Features
