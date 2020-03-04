@@ -1,6 +1,6 @@
 # Web Biscuit Website
 
-![Node.js CI](https://github.com/webbiscuit/webbiscuit-website/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/webbiscuit/webbiscuit-website/workflows/Node.js%20CI/badge.svg?event=check_run)
 [![Greenkeeper badge](https://badges.greenkeeper.io/webbiscuit/webbiscuit-website.svg)](https://greenkeeper.io/)
 [![Known Vulnerabilities](https://snyk.io/test/github/webbiscuit/webbiscuit-website/badge.svg)](https://snyk.io/test/github/webbiscuit/webbiscuit-website)
 
