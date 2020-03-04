@@ -6,13 +6,14 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "server": "hexo server",
-    "deploy": "aws s3 sync public s3://webbiscuit-site --delete --profile webbiscuit --cache-control max-age=604800"
+    "deploy": "aws s3 sync public s3://webbiscuit-site --delete --profile webbiscuit --cache-control max-age=604800",
+    "test": "snyk test"
   },
   "hexo": {
     "version": "4.2.0"
   },
   "dependencies": {
-    "hexo": "^4.0.0",
+    "hexo": "^4.2.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
@@ -22,5 +23,8 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0"
+  },
+  "devDependencies": {
+    "snyk": "^1.298.0"
   }
 }
