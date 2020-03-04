@@ -19,7 +19,7 @@ GitHub: [github.com/webbiscuit](https://github.com/webbiscuit)
 
 **October 2017 – Present**
 
-BJSS are an agile-centric software consultancy who have a number of high-profile clients. I work here as a software consultant, and have led some of our software projects. I've been doing lots of exciting cloud tranformation projects, mostly in AWS but some Azure ones too.
+BJSS are an agile-centric software consultancy who have a number of high-profile clients. I work here as a software consultant, and have led some of our software projects. My roles have varied, but I've been a developer, tech lead, architect, data engineer, analyst and consultant. I've been doing lots of exciting cloud tranformation projects, mostly in AWS but some Azure ones too.
 
 #### Projects
 
@@ -28,7 +28,7 @@ BJSS are an agile-centric software consultancy who have a number of high-profile
 - Represented the company at Hack24 in a team of four, taking first prize in the Microsoft Azure category for creative use of cognitive services. Won an XBox.
 - Technical lead for chatbot proof of concept to help with FAQs at a call centre.
 - Technical lead for transforming a monolith into microservices for a currency exchange company.
-- Data engineer using Azure Databricks for big data processing and generating credit reports for a financial company.
+- Data engineer using Azure Databricks and PySpark for big data processing and generating credit reports for a financial company.
 
 ### Software Developer/Team Lead - Romax Technology/Romax InSight
 
@@ -41,7 +41,7 @@ Romax InSight was acquired by Castrol in Feb 2017.
 
 #### Achievements & Responsibilities
 
-- Promoted to software lead, managing a team to turn product requirements from managers, end users and sales into cohesive software
+- Promoted to software lead, managing a team to turn requirements from managers, end users and sales into cohesive software
 - Working with distributed team members and requirements from US and Korea
 - Onboarding customers and integrating their data streams into Romax systems and software
 - Ensuring software is reliable and delivered in a timely fashion
@@ -53,7 +53,7 @@ Romax InSight was acquired by Castrol in Feb 2017.
   - Changing software philosophy to a microservice architecture with restful APIs
   - Migrating legacy code to JavaScript framework (Angular)
   - Moving source code system to GIT
-  - Moving to a more responsive Kanban approach for software delivery
+  - Moving to a streamlined and responsive Kanban process, shifting the team from a 6 month waterfall release cycle to a potential fortnightly release
   - Improving documentation and knowledge transfer
 
 #### Skills
@@ -99,7 +99,7 @@ It is an extremely complex product containing millions of lines of code written 
 
 DriveSentry was a personal data protection company whose main products were anti-virus, anti-rootkit and data encryption software.
 
-There was also a smaller stand-alone USB version of the main product (DriveSentry GoAnywhere). DriveSentry was a startup company and this was a brand new product, designed and written from scratch.
+DriveSentry was a startup company and I was one of the first employees. It was a great achievement to take a design and see it on the shelves in PC world and on a magazine cover disk. 
 
 #### Achievements & Responsibilities
 
@@ -120,7 +120,7 @@ There was also a smaller stand-alone USB version of the main product (DriveSentr
 
 **December 2004 – July 2005**
 
-Bitarts was a software security firm, specialising in copy protection and anti-piracy software wrappers.
+Bitarts was a software security firm, specialising in copy protection, DRM and anti-piracy software wrappers.
 
 #### Achievements & Responsibilities
 
@@ -157,11 +157,6 @@ HND Computer Studies (MERIT)
 
 ### The Manor Comprehensive School 1992-1999
 
-Four A-Levels:
-
-- Maths (D)
-- Biology (D)
-- Physics (E)
-- General Studies (B)
+Four A-Levels (Maths, Biology, Physics, General Studies)
 
 Nine GCSEs
