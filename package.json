@@ -25,6 +25,6 @@
     "hexo-server": "^1.0.0"
   },
   "devDependencies": {
-    "snyk": "^1.334.0"
+    "snyk": "^1.336.0"
   }
 }
