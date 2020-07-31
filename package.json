@@ -6,7 +6,9 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "server": "hexo server",
-    "deploy": "aws s3 sync public s3://webbiscuit-site --delete --profile webbiscuit --cache-control max-age=604800"
+    "deploy": "aws s3 sync public s3://webbiscuit-site --delete --profile webbiscuit --cache-control max-age=604800",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "hexo": {
     "version": "5.0.0"
@@ -23,9 +25,8 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "npm-check-updates": "^7.0.2"
+    "snyk": "^1.368.0"
   },
-  "devDependencies": {
-    "snyk": "^1.369.2"
-  }
+  "devDependencies": {},
+  "snyk": true
 }
