@@ -1,0 +1,25 @@
+---
+title: Could Blockchain have saved America?
+tags:
+  - blockchain
+  - voting
+date: 2020-11-11 21:20:00
+---
+
+![Team America @imgur](https://i.imgur.com/tGgS3nZ.jpg "Team America @imgur")
+
+Blockchain turns up late to its own party, looking stunning. Blockchain is all we've heard about all evening, all we've been talking about, and we're all excited to see what's about to happen. Blockchain looks incredible. Blockchain gets up on stage and picks up the microphone. The music stops. A hush descends. All eyes on Blockchain.
+Blockchain opens its mouth and all these weird noises come out. The lights come on, and that's it. Go home music comes on, and we're all told to leave. Ah Blockchain, what can we do with you?
+
+The voting system is an archaic system based on trust and the belief that voters can vote for what they think is right, and collectively, the desired outcome will occur.
+But now that trust is being challenged, which kind of breaks everything. The mail cannot be trusted. Dead folk are voting, and votes are on fire or floating in a river.
+
+If only this could be solved by technology! If only there were some sort of impartial mediator thingy that could resolve all of these trust issues! Blockchain, let me hold your beer!
+
+The idea behind blockchain is it's this immutable self-serving blob that can only ever grow and carries all of its baggage and history around with it for the rest of forever, like Frankenstein's Monster dragging its bulk and dead body parts wherever it goes. You would never want to date a blockchain. A blockchain is validated by multiple participants in its network, by doing some weird complicated magic nobody really understands, and the end result is if the blockchain says Barry Jaffacake won the election then that is absolutely the truth\* and we would have all the proof we need. We'd have a complete audit log and could trace back every single vote to its origin. On the flip side...well everyone using the blockchain has access to this information so let's hope you didn't vote for anything embarrassing, or incredibly dangerous.
+
+The other biggie is digital inclusion - there's a huge number of people who are disconnected from the digital world who have a vote too. So we have to keep those existing voting mechanisms in place, only adding this 3rd way to vote to make it even easier to rig an election.
+
+So here we are, Blockchain. Still don't know what to do with you. In a world where politicians are distrustful of algorithms and technology anyway, this isn't your time to shine. Maybe you peaked at Bitcoin.
+
+\* The contents of blockchain can be trusted...kind of. It relies on the majority of the network agreeing with the contents, so could be overcome by immense computing power. Then there are easier ways: like all systems we have to look at the joins and the ends, because that is where we can cause most trouble. The software mantra of "Garbage in, garbage out" is true here, except now you can never get rid of that garbage. Nobody really talks about how you get trusted data into a blockchain. What if your computer is compromised and it's actually writing Bernie Hobnob votes to the blockchain instead? How would you ever know? Even if you knew, what would it mean for the rest of the blockchain?
