@@ -17,7 +17,7 @@ Problems with enterprise systems usually fall into two categories:
 
 If you solve these problems badly you can get into a vicious cycle where one causes the other, forever more. This is great news for the consultancy you've brought in but as an enterprise you probably want to get to the root of the problem. Let's see what it is.
 
-Here's a typical business: Doctor Frankenstein's Extra Bodyparts Limited. It's an online service to order spare parts for your monsters. To outsiders, it's a perfectly successful and respectful business. Internally however, it's turmoil and the business is having to hire more and more creatures to handle its processes.
+Here's a typical business: Doctor Frankenstein's Extra Bodyparts Limited. It's an online service to order spare parts for your monsters. To outsiders, it's a perfectly successful and respectable business. Internally however, it's turmoil and the business is having to hire more and more creatures to handle its processes.
 
 The sales department is exclusively manned by vampires. The vampires hate the werewolves that run the HR department. Goblins are in finance, they don't like werewolves at all and vampires only visit to terrorise them. Harpy hags in marketing enjoy vampire and werewolf sandwiches, sprinkled with goblin. Everyone hates the ghouls in IT for obvious reasons. These toxic relationships are seen all over, even in human companies. Departments don't like interacting with each other. The business is run in silos and everyone had their own system for managing things. Silos aren't desirable, but often emerge naturally as they follow management lines or project budgets.
 
