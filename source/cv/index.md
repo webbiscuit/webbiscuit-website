@@ -19,25 +19,48 @@ GitHub: [github.com/webbiscuit](https://github.com/webbiscuit)
 
 **October 2017 – Present**
 
-BJSS are an agile-centric software consultancy who have a number of high-profile clients. I work here as a software consultant, and have led some of our software projects. My roles have varied, but I've been a developer, tech lead, architect, data engineer, analyst and consultant. I've been doing lots of exciting cloud tranformation projects, mostly in AWS but some Azure ones too.
+BJSS is an agile-centric software consultancy who have a number of high-profile clients. I work here as a software consultant and have led some of our software projects. I've been mostly developing, but also involved in bids, architecture, analysis and people management at all stages of projects – bidding, pre-sales, workshops, discovery and delivery. I've also been a line manager to help with our developer's professional development.
+I’ve been helping shape the Nottingham, Birmingham, Lisbon offices and graduate academies to build our future teams by conducting competency-based interviews and providing timely feedback to reduce the time to hire.
+
+A lot of my consulting has been helping organisations realise their digital transformation journeys and move to the cloud (AWS/Azure) or optimising how it is used in the business.
 
 #### Projects
 
-- Technical lead for government contract to enable customers to view and manage financial data for their business. This involved a nodejs express webserver running in AWS lambda and surfacing data from legacy systems. Working to GDS guidelines.
-- Technical lead for high-profile government project, building an ionic web application and microservices, to fundamentally transform process and the day-to-day jobs of staff. Working to GDS guidelines.
+**Government Projects**
+- Tech lead to create a new web frontend to enable government backed businesses to manage their accounts and bookings. Working to GDS guidelines. (Javascript/AWS).
+- Technical lead for high-profile government project to digitally transform a life defining process. Working to GDS guidelines, and the project won awards. (Ionic/Typescript/AWS)
+
+**Hack 24**
+
 - Represented the company at Hack24 in a team of four, taking first prize in the Microsoft Azure category for creative use of cognitive services. Won an XBox.
-- Technical lead for chatbot proof of concept to help with FAQs at a call centre.
-- Technical lead for transforming a monolith into microservices for a currency exchange company.
-- Data engineer using Azure Databricks and PySpark for big data processing and generating credit reports for a financial company.
+
+**Chatbots**
+
+Created an internal serverless chatbot framework and took this to a client to remove the burden from call centre agents. (AWS/Javascript/Python/AI)
+
+**Currency Exchange**
+
+Tech lead to transform a monolith into distributed microservices (C#/Service Fabric)
+
+**Finance**
+
+- Data engineer and platform for big data processing (Python/PySpark/Azure)
+
+- Data engineer and platform for data processing (Python/Pandas/AWS)
+
+**Consulting**
+
+- Advised a law company on the architecture of a patent renewal system
+
+- Advised a manufacturing company with their current software landscape and helped defined a future roadmap with actionable steps
 
 ### Software Developer/Team Lead - Romax Technology/Romax InSight
 
 **January 2014 – September 2017**
 
-Romax InSight monitor and offer consultation and engineering services on wind turbines all over the world. They can also recommend, design and install improved designs to increase the turbine life.  
-Fleet Monitor is the flagship web software package for InSight used by wind monitoring engineers to analyse and report on the health of wind turbines.
+As tech lead at Romax InSight I oversaw and delivered the technical handover and knowledge share during an acquisition by Castrol.
 
-Romax InSight was acquired by Castrol in Feb 2017.
+I led a team of 3 developers and developed a wind turbine monitoring system which was used globally. This was written in Python with a front end in javascript. When I became tech lead I transitioned a legacy frontend to Angular and created an architecture to gradually break a monolith system into distributed microservices. I was able to reimagine the delivery process and bring in a more agile way of working, taking the product from a 6-9 monthly release cycle to a more responsive Kanban model and enabling a weekly release if the business required.
 
 #### Achievements & Responsibilities
 
@@ -45,7 +68,7 @@ Romax InSight was acquired by Castrol in Feb 2017.
 - Working with distributed team members and requirements from US and Korea
 - Onboarding customers and integrating their data streams into Romax systems and software
 - Ensuring software is reliable and delivered in a timely fashion
-- Architect of entire system, from database to servers to front end and supporting products
+- Architectural responsibilities of entire system, from database to servers to front end and supporting products
 - Embracing AWS services to improve scalability, data flow and deployment process
 - Overseeing and delivering technical handover and sharing software knowledge during company acquisition
 - Supporting hardware, consultancy and research departments with bespoke software and expertise as needed
@@ -53,7 +76,7 @@ Romax InSight was acquired by Castrol in Feb 2017.
   - Changing software philosophy to a microservice architecture with restful APIs
   - Migrating legacy code to JavaScript framework (Angular)
   - Moving source code system to GIT
-  - Moving to a streamlined and responsive Kanban process, shifting the team from a 6 month waterfall release cycle to a potential fortnightly release
+  - Moving to a streamlined and responsive Kanban process
   - Improving documentation and knowledge transfer
 
 #### Skills
