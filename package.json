@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo clean && hexo generate",
     "clean": "hexo clean",
-    "server": "hexo server",
+    "server": "hexo server --watch",
     "deploy": "aws s3 sync public s3://webbiscuit-site --delete --profile webbiscuit --cache-control max-age=604800"
   },
   "hexo": {
