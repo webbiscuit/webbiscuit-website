@@ -8,6 +8,7 @@ description: CV for Daniel Childs
 <!-- # Daniel Robert Childs -->
 
 <!-- Download: [resume.pdf](/files/daniel-childs-resume.pdf)   -->
+
 Email: [daniel@webbiscuit.co.uk](mailto:daniel@webbiscuit.co.uk)  
 Website: [www.webbiscuit.co.uk](http://www.webbiscuit.co.uk)  
 LinkedIn: [www.linkedin.com/in/daniel-childs](https://www.linkedin.com/in/daniel-childs-4719ba3b)  
@@ -27,6 +28,7 @@ A lot of my consulting has been helping organisations realise their digital tran
 #### Projects
 
 **Government Projects**
+
 - Tech lead to create a new web frontend to enable government backed businesses to manage their accounts and bookings. Working to GDS guidelines. (Javascript/AWS).
 - Technical lead for high-profile government project to digitally transform a life defining process. Working to GDS guidelines, and the project won awards. (Ionic/Typescript/AWS)
 
@@ -53,6 +55,10 @@ Tech lead to transform a monolith into distributed microservices (C#/Service Fab
 - Advised a law company on the architecture of a patent renewal system
 
 - Advised a manufacturing company with their current software landscape and helped defined a future roadmap with actionable steps
+
+**Law**
+
+- Tech lead building an online web portal to enable customers to view and renew their patent portfolio
 
 ### Software Developer/Team Lead - Romax Technology/Romax InSight
 
@@ -122,7 +128,7 @@ It is an extremely complex product containing millions of lines of code written 
 
 DriveSentry was a personal data protection company whose main products were anti-virus, anti-rootkit and data encryption software.
 
-DriveSentry was a startup company and I was one of the first employees. It was a great achievement to take a design and see it on the shelves in PC world and on a magazine cover disk. 
+DriveSentry was a startup company and I was one of the first employees. It was a great achievement to take a design and see it on the shelves in PC world and on a magazine cover disk.
 
 #### Achievements & Responsibilities
 
