@@ -29,8 +29,8 @@ A lot of my consulting has been helping organisations realise their digital tran
 
 **Government Projects**
 
-- Tech lead to create a new web frontend to enable government backed businesses to manage their accounts and bookings. Working to GDS guidelines. (Javascript/AWS).
-- Technical lead for high-profile government project to digitally transform a life defining process. Working to GDS guidelines, and the project won awards. (Ionic/Typescript/AWS)
+- Tech lead to create a new web frontend to enable government backed vehicle businesses to manage their accounts and bookings. Working to GDS guidelines. (Javascript/AWS).
+- Technical lead for high-profile government project to transform the driving test from a paper-based system to digital. Working to GDS guidelines, and the project won awards. (Ionic/Typescript/AWS)
 
 **Hack 24**
 
