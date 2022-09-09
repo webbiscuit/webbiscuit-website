@@ -13,7 +13,7 @@ Source for Web Biscuit website.
 - Pages templated using nunjucks
 - npm used as package manager
 - Deploy to AWS
-- Github build action, greenkeeper, snyk and badges and stuff
+- Github build actions and badges and stuff
 
 ## Development
 
@@ -21,14 +21,10 @@ Run `npm install`. This will install the dependencies and build the 3rd party fi
 
 ### Dev server with hot reloading
 
-`npm run server`
+`npm run start`
 
 ## Site building
 `npm run build`
-
-## Run dev server
-
-`npm run server`
 
 <!-- ## Bonus Features
 The resume that appears on the site can be built into multiple formats using the same .md file:
