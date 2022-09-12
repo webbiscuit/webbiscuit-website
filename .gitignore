@@ -1,4 +1,4 @@
-node_modules
-db.json
-archive
+node_modules/
+.cache/
 public
+src/gatsby-types.d.ts

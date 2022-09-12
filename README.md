@@ -1,42 +1,54 @@
-# Web Biscuit Website
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby minimal TypeScript starter
+</h1>
 
-[![Node.js CI](https://github.com/webbiscuit/webbiscuit-website/workflows/Node.js%20CI/badge.svg)](https://github.com/webbiscuit/webbiscuit-website/actions?query=workflow%3A%22Node.js+CI%22)
+## 🚀 Quick start
 
-[![Known Vulnerabilities](https://snyk.io/test/github/webbiscuit/webbiscuit-website/badge.svg)](https://snyk.io/test/github/webbiscuit/webbiscuit-website)
+1.  **Create a Gatsby site.**
 
-Source for Web Biscuit website.
+    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
 
-## Features
-- Built using hexo
-- Packed with webpack
-- Content written in markdown
-- Pages templated using nunjucks
-- npm used as package manager
-- Deploy to AWS
-- Github build actions and badges and stuff
+    ```shell
+    # create a new Gatsby site using the minimal TypeScript starter
+    npm init gatsby
+    ```
 
-## Development
+2.  **Start developing.**
 
-Run `npm install`. This will install the dependencies and build the 3rd party files.
+    Navigate into your new site’s directory and start it up.
 
-### Dev server with hot reloading
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-`npm run start`
+3.  **Open the code and start customizing!**
 
-## Site building
-`npm run build`
+    Your site is now running at http://localhost:8000!
 
-<!-- ## Bonus Features
-The resume that appears on the site can be built into multiple formats using the same .md file:
-- HTML
-- PDF
-- docx
+    Edit `src/pages/index.tsx` to see your site update in real-time!
 
-Build all these with `npm run build:cv`
+4.  **Learn more**
 
-Make sure you have pandoc installed.
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-You might also need some supporting libraries for pandoc:
-- texlive-latex-base
-- texlive-fonts-recommended -->
+    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
+    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+## 🚀 Quick start (Gatsby Cloud)
+
+Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
