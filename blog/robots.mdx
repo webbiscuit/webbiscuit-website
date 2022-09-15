@@ -1,0 +1,15 @@
+---
+title: Would you awkwardly kiss a robot?
+tags:
+  - future technology
+  - robots
+date: 2021-02-14 18:00:00
+---
+
+![Semi-hot Robot @imgur](https://i.imgur.com/sHlIqiT.jpg "Semi-hot Robot @imgur")
+
+"Good morning!" Your sex-bot has monitored your vital signs and woken you at the optimal time, and you feel wonderful. There's already a coffee and a plate of vitamins next to your bed. After, you have a quick shower of anti-virals before you plug yourself into your console for the day. With an infinite number of channels of generated content just for you, the screen fulfils every ambition and need you've ever had. Pornhub got on board with this early and are now the biggest company in the world. Last week they bought Microsoft.
+
+After 16 hours at the computer, you attach some different legs and have a little stroll around the apartment. You press a button and a panel peels back for a view onto the outside. Most of the world is a smouldering ruin now, the product of early unregulated WFH and AI. Occasionally, a terminator or drone will pass by, but the outside world and other humans do not concern you as you have everything you need right here. Something alien stirs within you - there is a little thought but you cannot grasp it, and then it's gone. You press the button and the panel slides back again.
+
+You sex-bot emits an inaudible frequency, gently raising your arousal levels. It waves at you from the bed. You go over and awkwardly kiss your robot. (This will be fixed in the next update.)
