@@ -5218,6 +5218,13 @@ gatsby-plugin-mdx@^4.2.0:
     unist-util-visit "^4.1.0"
     vfile "^5.3.2"
 
+gatsby-plugin-no-sourcemaps@^4.23.0:
+  version "4.23.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-4.23.0.tgz#c1551d780197c4d0070eec6a4545b3b420bd5b82"
+  integrity sha512-uBZJsf5ll0CsNxiczEqaLRkBULlHhOXDWU3SLWdkaZXLPZQPhVx0teiy5ycfwU7qI+TC++c4oLjQPKbodG/IoQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+
 gatsby-plugin-page-creator@^4.23.0:
   version "4.23.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.23.0.tgz#53e249f91305316f61ffd4a9fec751d83fd66e8f"
