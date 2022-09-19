@@ -2,7 +2,7 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Web Biscuit Website`,
+    title: `I am Web Biscuit`,
     siteUrl: `https://www.webbiscuit.co.uk`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
