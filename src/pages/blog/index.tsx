@@ -70,7 +70,7 @@ const BlogPreview = ({
       }}
     >
       <HStack spacing="24px">
-        <Link to={`/blog${slug}`}>
+        <Link to={`/blog${slug}/`}>
           <Heading size="xl" fontWeight={600}>
             {title}
           </Heading>

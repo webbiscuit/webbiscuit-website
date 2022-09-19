@@ -4,7 +4,6 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import { Text, Heading, Box, VStack, HStack } from "@chakra-ui/react";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
-import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 
 type BlogPostQuery = {
   readonly mdx: {
