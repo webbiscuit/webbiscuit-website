@@ -1,6 +1,9 @@
 // src/@chakra-ui/gatsby-plugin/theme.js
 import { extendTheme } from '@chakra-ui/react'
-import "@fontsource/figtree/400.css";
+import "@fontsource/figtree/500.css";
+import "@fontsource/figtree/600.css";
+import "@fontsource/figtree/800.css";
+import "@fontsource/figtree/900.css";
 import "@fontsource/spline-sans-mono/400.css";
 
 const theme = {
