@@ -7,7 +7,7 @@ import Seo from '../../components/seo'
 const BlogPreview = ({title, date, description}: {title?: string, date?: string, description?: string}) => {
     return (
       <Box as="article">
-        <Heading>{title}</Heading>
+        <Heading size="xl">{title}</Heading>
         {date && <Text as="time" dateTime={date}>{date}</Text>}
         <Text>{description}</Text>
       </Box>
@@ -20,7 +20,7 @@ const BlogPage = ({data} : PageProps<Queries.BlogPageQuery>) => {
       <Layout>
         <Box as="section">
           <Box as="header">
-            <Heading as="h1">An Occasional Blog</Heading>
+            <Heading as="h1" size="4xl">An Occasional Blog</Heading>
             <Text>Writing about technology, one bite at a time</Text>
           </Box>
           {

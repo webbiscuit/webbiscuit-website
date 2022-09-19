@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 
   return (
     // <div className={container}>
-      <Container as="main" maxW="7xl">
+      <Container as="main" maxW="7xl" backgroundColor="yellow.50" color={"yellow.900"} my={10}>
         {/* <h1 className={heading}>{pageTitle}</h1> */}
         {children}
       </Container>

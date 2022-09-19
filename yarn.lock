@@ -1920,6 +1920,16 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/figtree@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-4.5.0.tgz#b4d07b0f78e05a2eac3a66acb8d216f369e1d8d2"
+  integrity sha512-+nS66OS1kaFkwVvqb4VYFQPxi98/uXa3SskncJ8e5T8wN0igmgnuxNYGWeKPLqf1tadQHO2lYF9JJ/GVYN7eaQ==
+
+"@fontsource/spline-sans-mono@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/spline-sans-mono/-/spline-sans-mono-4.5.1.tgz#10ed35cb519750c596de6caebfbedb60865e7dd2"
+  integrity sha512-l0NWH4vaoBKw2n54uyBDzwgAGYfqsuezirlVQMmNabLoKRctxqGL/qWJh/ZHh1sFgDVOQhzrIJrRxgWtM3e/kA==
+
 "@gatsbyjs/parcel-namer-relative-to-cwd@^1.8.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.8.0.tgz#5df3840207014c1c217d4fb430a9853620bc9e64"
