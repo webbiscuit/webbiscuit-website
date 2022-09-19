@@ -32,9 +32,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         >
           Web Biscuit
         </Text>
-        <Text>Blog</Text>
+        <Link to="/blog/">Blog</Link>
         <Text>About</Text>
-        {/* <Link>Blog</Link> */}
       </HStack>
       <Container
         as="main"

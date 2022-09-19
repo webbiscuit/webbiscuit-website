@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import { Text, Heading, Box, VStack, HStack } from "@chakra-ui/react";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+import { MdxWrapper } from "../../components/mdx-wrapper";
 
 type BlogPostQuery = {
   readonly mdx: {
@@ -43,7 +44,7 @@ const BlogPost = ({
           alt={data.mdx?.frontmatter?.hero_image_alt ?? "An image"}
         />
       )}
-      {children}
+      <MdxWrapper>{children}</MdxWrapper>
     </Layout>
   );
   // const image = getImage(data.mdx.frontmatter.hero_image)
