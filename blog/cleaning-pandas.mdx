@@ -27,7 +27,7 @@ Kitten Name, Kitten Colour, Favourite Biscuit
 
 It might seem we can read in the data and use it like this:
 
-```
+```python
 import pandas as pd
 
 df = pd.read_csv("data/secret_kitten_biscuits.csv")
@@ -39,7 +39,9 @@ We need to strip out those leading and trailing whitespaces. There is a function
 
 There's a cute way to apply a function across all of the column names:
 
-    df.columns = df.columns.map(str.strip)
+```
+df.columns = df.columns.map(str.strip)
+```
 
 ## I don't trust nulls
 
@@ -53,24 +55,28 @@ secret sauce,,,23, - ,,
 
 Here want ' - ' to also mean null. This means we can't redefine null at read time, but we can add an extra step to handle these special values as nulls:
 
-```
-    import numpy as np
+```python
+import numpy as np
 
-    df = pd.read_csv("data/seckret_sauces.csv")
-    df = df.replace(' - ', np.nan)
+df = pd.read_csv("data/seckret_sauces.csv")
+df = df.replace(' - ', np.nan)
 ```
 
 ## My numbers are strings
 
 I have no idea how data gets this way naturally, but it does, and let's suppose you are reading in a file that looks like this:
 
+```
     "penguins","123,345,123",345,"345,321",431332
+```
 
 You have a weird mix of numbers in strings, non-strings and non-numbers, but you actually want all the numbers to be treated the same so you can do like calculations on them and stuff. So how do we do that?
 
 Well you don't want to do anything to the first column because that's definitely not a number, and you want to yank out those commas because they are for humans and not computers, and then you want to cast everything to a number. It's easier in python that in English:
 
+```python
     df.iloc[:,1:].replace(',','',regex=True).apply(pd.to_numeric)
+```
 
 ## Conclusion
 

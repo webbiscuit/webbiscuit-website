@@ -1,6 +1,7 @@
 import { Heading, Text } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
 import React, { ReactNode } from "react";
+import CodeBlock from "./codeblock";
 
 const MyH1 = (props) => (
   <Heading
@@ -20,6 +21,7 @@ const components = {
   h1: MyH1,
   h2: MyH2,
   p: MyParagraph,
+  pre: CodeBlock,
 };
 
 export const MdxWrapper = ({ children }: { children: ReactNode }) => (
