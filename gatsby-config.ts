@@ -27,7 +27,15 @@ const config: GatsbyConfig = {
     },
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [".mdx", ".md"],
+        mdxOptions: {
+          remarkPlugins: [require(`remark-emoji`)],
+        },
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
