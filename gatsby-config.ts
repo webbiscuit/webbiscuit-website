@@ -31,6 +31,16 @@ const config: GatsbyConfig = {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
+          // "gatsby-remark-copy-linked-files",
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              // showCaptions: true,
+            },
+          },
+        ],
         mdxOptions: {
           remarkPlugins: [require(`remark-emoji`)],
         },
@@ -52,6 +62,7 @@ const config: GatsbyConfig = {
         name: `blog`,
         path: `${__dirname}/blog`,
       },
+      __key: "blog",
     },
     // "gatsby-plugin-no-sourcemaps",
   ],

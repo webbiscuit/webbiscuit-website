@@ -35,14 +35,16 @@ const BlogPost = ({
 
   return (
     <Layout>
-      <Heading size="xl" fontWeight={600}>
+      <Heading size="3xl" fontWeight={600} textAlign="center" padding={2}>
         {data.mdx?.frontmatter?.title}
       </Heading>
       {image && (
-        <GatsbyImage
-          image={image}
-          alt={data.mdx?.frontmatter?.hero_image_alt ?? "An image"}
-        />
+        <Box alignContent={"center"} textAlign={"center"}>
+          <GatsbyImage
+            image={image}
+            alt={data.mdx?.frontmatter?.hero_image_alt ?? "An image"}
+          />
+        </Box>
       )}
       <MdxWrapper>{children}</MdxWrapper>
     </Layout>
