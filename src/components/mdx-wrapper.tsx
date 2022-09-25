@@ -25,7 +25,9 @@ const MyParagraph = (props) => (
 //   // return <Image w="100px" {...props} />;
 // };
 
-// const MyFigCaption = (props) => <Text as="figcaption" size="sm" {...props} />;
+// const MyFigCaption = (props) => (
+//   <Text as="figcaption" size="xsm" color={"red"} {...props} />
+// );
 
 // const MyDiv = (props) => <Box as="div" {...props} />;
 

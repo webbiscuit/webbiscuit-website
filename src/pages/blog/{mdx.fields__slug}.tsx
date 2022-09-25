@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql, PageProps } from "gatsby";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
-import { Text, Heading, Box, VStack, HStack } from "@chakra-ui/react";
+import { Text, Heading, Box, Link, HStack } from "@chakra-ui/react";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { MdxWrapper } from "../../components/mdx-wrapper";
 
@@ -35,18 +35,32 @@ const BlogPost = ({
 
   return (
     <Layout>
-      <Heading size="3xl" fontWeight={600} textAlign="center" padding={2}>
-        {data.mdx?.frontmatter?.title}
-      </Heading>
-      {image && (
-        <Box alignContent={"center"} textAlign={"center"}>
-          <GatsbyImage
-            image={image}
-            alt={data.mdx?.frontmatter?.hero_image_alt ?? "An image"}
-          />
-        </Box>
-      )}
-      <MdxWrapper>{children}</MdxWrapper>
+      <Box as="article">
+        <Heading size="3xl" fontWeight={600} textAlign="center" padding={2}>
+          {data.mdx?.frontmatter?.title}
+        </Heading>
+        {image && (
+          <Box alignContent={"center"} textAlign={"center"}>
+            <GatsbyImage
+              image={image}
+              alt={data.mdx?.frontmatter?.hero_image_alt ?? "An image"}
+            />
+            <HStack justifyContent="center" fontSize="xs" fontWeight={300}>
+              <Text as="figcaption">
+                {data.mdx?.frontmatter?.hero_image_alt}
+              </Text>
+              <Text>{" - "}</Text>
+              <Link
+                href={data.mdx?.frontmatter?.hero_image_credit_link ?? "#"}
+                isExternal
+              >
+                <Text>{data.mdx?.frontmatter?.hero_image_credit}</Text>
+              </Link>
+            </HStack>
+          </Box>
+        )}
+        <MdxWrapper>{children}</MdxWrapper>
+      </Box>
     </Layout>
   );
   // const image = getImage(data.mdx.frontmatter.hero_image)

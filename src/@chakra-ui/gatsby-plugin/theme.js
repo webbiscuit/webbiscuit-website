@@ -1,5 +1,6 @@
 // src/@chakra-ui/gatsby-plugin/theme.js
 import { extendTheme } from '@chakra-ui/react'
+import "@fontsource/figtree/300.css";
 import "@fontsource/figtree/500.css";
 import "@fontsource/figtree/600.css";
 import "@fontsource/figtree/800.css";
