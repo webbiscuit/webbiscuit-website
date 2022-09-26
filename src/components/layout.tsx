@@ -23,17 +23,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         borderStyle="solid"
         borderColor={"yellow.900"}
       >
-        <Text
-          paddingX={2}
-          fontSize="6xl"
-          fontWeight={900}
-          bg={"yellow.700"}
-          color={"yellow.200"}
-        >
-          Web Biscuit
-        </Text>
+        <Link to="/">
+          <Text
+            paddingX={2}
+            fontSize="6xl"
+            fontWeight={900}
+            bg={"yellow.700"}
+            color={"yellow.200"}
+          >
+            Web Biscuit
+          </Text>
+        </Link>
         <Link to="/blog/">Blog</Link>
-        <Text>About</Text>
+        <Link to="/cv/">CV</Link>
       </HStack>
       <Container
         as="main"

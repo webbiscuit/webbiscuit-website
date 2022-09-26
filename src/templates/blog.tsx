@@ -1,10 +1,10 @@
 import * as React from "react";
 import { graphql, PageProps } from "gatsby";
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 import { Text, Heading, Box, Link, HStack } from "@chakra-ui/react";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
-import { MdxWrapper } from "../../components/mdx-wrapper";
+import { MdxWrapper } from "../components/mdx-wrapper";
 
 type BlogPostQuery = {
   readonly mdx: {

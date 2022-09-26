@@ -27,6 +27,7 @@ const config: GatsbyConfig = {
     },
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
+    `gatsby-plugin-mdx-source-name`,
     {
       resolve: "gatsby-plugin-mdx",
       options: {
@@ -64,6 +65,22 @@ const config: GatsbyConfig = {
       },
       __key: "blog",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `mdxPages`,
+        path: `${__dirname}/src/mdxPages`,
+      },
+      __key: "mdxPages",
+    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "pages",
+    //     path: `${__dirname}/pages`,
+    //   },
+    //   __key: "pages",
+    // },
     // "gatsby-plugin-no-sourcemaps",
   ],
 };

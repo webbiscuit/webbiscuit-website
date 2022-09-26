@@ -19,3 +19,4 @@ tailspin
 - Smart Styling?
 - Days ago counter for blog
 - Alternative to inline images (gatsby-remark-images)
+- MDX files for non-blogs
