@@ -11,6 +11,15 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Web Biscuit`,
+        short_name: `WebBiscuit`,
+        start_url: `/`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    {
       resolve: "@chakra-ui/gatsby-plugin",
       options: {
         /**

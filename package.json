@@ -28,6 +28,7 @@
     "framer-motion": "^7.3.5",
     "gatsby": "^4.24.1",
     "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-manifest": "^4.24.0",
     "gatsby-plugin-mdx": "^4.3.0",
     "gatsby-plugin-mdx-source-name": "^1.0.1",
     "gatsby-plugin-no-sourcemaps": "^4.24.0",
@@ -45,7 +46,6 @@
     "@types/node": "^18.7.23",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
-    "gatsby-plugin-favicons": "^2.0.0",
     "typescript": "^4.8.4"
   }
 }
