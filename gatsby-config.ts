@@ -68,10 +68,10 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `mdxPages`,
-        path: `${__dirname}/src/mdxPages`,
+        name: `pages`,
+        path: `${__dirname}/pages`,
       },
-      __key: "mdxPages",
+      __key: "pages",
     },
     // {
     //   resolve: "gatsby-source-filesystem",
