@@ -4,8 +4,6 @@ tailspin
 
 ### TODO
 
-- Move blog posts to folders
-- Images
 - Show by tags
 - Show by date?
 - Preview blog page
@@ -19,4 +17,6 @@ tailspin
 - Smart Styling?
 - Days ago counter for blog
 - Alternative to inline images (gatsby-remark-images)
-- MDX files for non-blogs
+- 404
+- Articles
+- CV

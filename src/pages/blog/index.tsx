@@ -57,7 +57,7 @@ const BlogLatestPreview = ({
         mb={4}
       >
         <Flex>
-          <Link to={`/blog${slug}/`}>
+          <Link to={`/blog${slug}`}>
             <Heading size="xl" fontWeight={600}>
               {title}
             </Heading>
@@ -117,7 +117,7 @@ const BlogPreview = ({
       }}
     >
       <Flex>
-        <Link to={`/blog${slug}/`}>
+        <Link to={`/blog${slug}`}>
           <Heading size="xl" fontWeight={600}>
             {title}
           </Heading>
@@ -196,7 +196,10 @@ const BlogPage = ({ data }: PageProps<Queries.BlogPageQuery>) => {
 
 export const query = graphql`
   query BlogPage {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(
+      filter: { fields: { source: { eq: "blog" } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         frontmatter {
           date(formatString: "Do MMM YYYY")
