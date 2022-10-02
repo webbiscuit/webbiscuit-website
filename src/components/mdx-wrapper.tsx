@@ -14,11 +14,18 @@ const MyH1 = (props) => (
   />
 );
 const MyH2 = (props) => (
-  <Heading as="h2" color="green.900" size="md" {...props} />
+  <Heading as="h2" color="green.900" size="lg" {...props} />
+);
+const MyH3 = (props) => (
+  <Heading as="h3" color="green.700" size="md" {...props} />
+);
+const MyH4 = (props) => (
+  <Heading as="h4" color="green.500" size="sm" {...props} />
 );
 const MyParagraph = (props) => (
   <Text lineHeight={1.5} paddingY={3} {...props} />
 );
+const MyLi = (props) => <Box as="li" marginLeft={10} {...props} />;
 // const MyImg = (props) => {
 //   console.log(props);
 //   return <Image src={props.src} alt={props.alt} />;
@@ -34,6 +41,9 @@ const MyParagraph = (props) => (
 const components = {
   h1: MyH1,
   h2: MyH2,
+  h3: MyH3,
+  h4: MyH4,
+  li: MyLi,
   p: MyParagraph,
   pre: CodeBlock,
   // div: MyDiv,

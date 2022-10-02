@@ -20,3 +20,4 @@ tailspin
 - 404
 - Articles
 - CV
+- Downloadable version of CV
