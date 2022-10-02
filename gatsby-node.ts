@@ -40,11 +40,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const pageTemplate = path.resolve(`./src/templates/pages.tsx`);
 
   pages.forEach((node) => {
-    console.log(node);
+    // console.log(node);
 
     const slug = node.fields.slug ?? "";
-
-    console.log(slug);
 
     createPage({
       path: slug,
@@ -78,11 +76,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const blogTemplate = path.resolve(`./src/templates/blog.tsx`);
 
   blogs.forEach((node) => {
-    console.log(node);
+    // console.log(node);
 
     const slug = node.fields.slug ?? "";
-
-    console.log(slug);
 
     createPage({
       path: `blog${slug}`,
