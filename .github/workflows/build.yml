@@ -5,7 +5,9 @@ name: Website CI
 
 on:
   push:
-    branches: [master]
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -16,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.17.0]
+        node-version: [18.19.2]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -31,6 +33,7 @@ jobs:
       - run: yarn test
 
       - name: Deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: reggionick/s3-deploy@v3.1.1
         with:
           folder: public
