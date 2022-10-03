@@ -1923,10 +1923,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/figtree@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-4.5.0.tgz#b4d07b0f78e05a2eac3a66acb8d216f369e1d8d2"
-  integrity sha512-+nS66OS1kaFkwVvqb4VYFQPxi98/uXa3SskncJ8e5T8wN0igmgnuxNYGWeKPLqf1tadQHO2lYF9JJ/GVYN7eaQ==
+"@fontsource/figtree@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-4.5.1.tgz#b611ad0cca3bf48f333c543a67db74df3f23e4b3"
+  integrity sha512-VZjPzbD8+HdTgWI29myAkCsGiidTvCUJ18gsqd+g4ZkdpNFphn/zwlWiudbiICjrQMbC9Q+ZFkDmE+s9ysfGFg==
 
 "@fontsource/spline-sans-mono@^4.5.1":
   version "4.5.1"
