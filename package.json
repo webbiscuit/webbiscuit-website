@@ -21,7 +21,7 @@
     "@chakra-ui/react": "^2.4.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@fontsource/figtree": "^4.5.1",
+    "@fontsource/figtree": "^4.5.2",
     "@fontsource/spline-sans-mono": "^4.5.1",
     "@mdx-js/react": "^2.1.5",
     "@sindresorhus/slugify": "^1",
