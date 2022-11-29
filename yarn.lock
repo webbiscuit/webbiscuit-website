@@ -1229,10 +1229,10 @@
     "@chakra-ui/react-types" "2.0.5"
     "@chakra-ui/react-use-merge-refs" "2.0.5"
 
-"@chakra-ui/gatsby-plugin@^3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/gatsby-plugin/-/gatsby-plugin-3.0.6.tgz#175cb4d99ddad392fc4f2fcabb3e1af27e06bb73"
-  integrity sha512-dGAP/doUq1PU5atg/Qfs5yviuKp7W+arIB03A887SdWk2IEcEzctvJmPb7AAJUPu/OFQb4ztTUcfuX79uHqkVw==
+"@chakra-ui/gatsby-plugin@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/gatsby-plugin/-/gatsby-plugin-3.0.7.tgz#447d21348b855489e6f32ad1c551c62eb330aa28"
+  integrity sha512-KwlJHx2zsQyclKa2WR+621Z3gKoirG4OUe8uAHWnYMsQcqdeqgbaGHHBgbDR8bL1Plu81TVJiuZzbIQ+dZVD3w==
 
 "@chakra-ui/hooks@2.1.2":
   version "2.1.2"
