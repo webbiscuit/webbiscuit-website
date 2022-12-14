@@ -23,7 +23,7 @@
     "@emotion/styled": "^11.10.5",
     "@fontsource/figtree": "^4.5.2",
     "@fontsource/spline-sans-mono": "^4.5.1",
-    "@mdx-js/react": "^2.1.5",
+    "@mdx-js/react": "^2.2.1",
     "@sindresorhus/slugify": "^1",
     "framer-motion": "^7.9.0",
     "gatsby": "^4.25.0",
