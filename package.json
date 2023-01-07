@@ -24,7 +24,7 @@
     "@fontsource/figtree": "^4.5.2",
     "@fontsource/spline-sans-mono": "^4.5.1",
     "@mdx-js/react": "^2.2.1",
-    "@sindresorhus/slugify": "^1",
+    "@sindresorhus/slugify": "^2",
     "framer-motion": "^8.2.4",
     "gatsby": "^5.3.3",
     "gatsby-plugin-image": "^3.3.2",
