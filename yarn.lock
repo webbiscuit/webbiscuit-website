@@ -2820,7 +2820,7 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.6.0.tgz#3c7c9c46e678feefe7a2e5bb609d3dbd665ffb3f"
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
-"@sindresorhus/slugify@^1", "@sindresorhus/slugify@^1.1.2":
+"@sindresorhus/slugify@^1.1.2", "@sindresorhus/slugify@~1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@sindresorhus/slugify/-/slugify-1.1.2.tgz#c2c0129298b8caace2d9156176fe244d0e83156c"
   integrity sha512-V9nR/W0Xd9TSGXpZ4iFUcFGhuOJtZX82Fzxj1YISlbSgKvIiNa7eLEZrT0vAraPOt++KHauIVNYgGRgjc13dXA==
@@ -9962,7 +9962,7 @@ relay-runtime@12.0.0:
     fbjs "^3.0.0"
     invariant "^2.2.4"
 
-remark-emoji@^1:
+remark-emoji@~1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/remark-emoji/-/remark-emoji-1.1.1.tgz#abf157e8a5924e9387e4c8076ed56faa39cd0640"
   integrity sha512-Y9b/tzqpxk6p+xnHwicre+YW0jNW+b96CiLJmfh/CRLgXuSEZJnb2/irb1+mhdVRILLaF9u6r5heX2QyAzRH7Q==
