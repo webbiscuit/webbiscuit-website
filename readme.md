@@ -53,3 +53,5 @@ You might also need some supporting libraries for pandoc:
 - Alternative to inline images (gatsby-remark-images) - causes "react-dom.development.js:86 Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>."
 - Downloadable version of CV
 - SEO meta things
+- sitemap
+- feed
