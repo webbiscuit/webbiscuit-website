@@ -6196,27 +6196,6 @@ gatsby-core-utils@^4.3.1, gatsby-core-utils@^4.4.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.4.0.tgz#458673d22be3eb511ab8e12be4ea233a74591531"
-  integrity sha512-/ibilcGENKH6qqkcT17SIZgc2kjZn3HiGpD+ixbXYkMGqHiM5pj9XIHjy3DfvZvDt2ujkYV5EinmUdqx7CI81w==
-  dependencies:
-    "@babel/runtime" "^7.20.7"
-    ci-info "2.0.0"
-    configstore "^5.0.1"
-    fastq "^1.13.0"
-    file-type "^16.5.3"
-    fs-extra "^10.1.0"
-    got "^11.8.5"
-    import-from "^4.0.0"
-    lmdb "2.5.3"
-    lock "^1.1.0"
-    node-object-hash "^2.3.10"
-    proper-lockfile "^4.1.2"
-    resolve-from "^5.0.0"
-    tmp "^0.2.1"
-    xdg-basedir "^4.0.0"
-
 gatsby-graphiql-explorer@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-3.3.0.tgz#232add5735b09f0cd60861379a782d1a8c587fc4"
@@ -6357,23 +6336,23 @@ gatsby-plugin-page-creator@^5.3.1:
     globby "^11.1.0"
     lodash "^4.17.21"
 
-gatsby-plugin-sharp@^5.3.2:
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.3.2.tgz#b7b93f3ac1375aab0d7209ed989d0af4fd451d44"
-  integrity sha512-juMJFdVwB/b9Z6W5Crr1tizZ4aJkEUcgsKjQD6q4EnRc7RnRl9kGTYxOiAyxrVHmpb5KW/ixVA6YHukB6Pcn9g==
+gatsby-plugin-sharp@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.4.0.tgz#a70d694b7775c437046d7c19e4a2b7b6a2189952"
+  integrity sha512-QFGMP3skMyiLBx/1JGs296ZT0aWkzP2SsEp+5MA/Yg23T8Hrb/bBmxe+cAD0PoALQl9lmEA7NPawuh0q1HaGPw==
   dependencies:
-    "@babel/runtime" "^7.15.4"
+    "@babel/runtime" "^7.20.7"
     async "^3.2.4"
     bluebird "^3.7.2"
     debug "^4.3.4"
     filenamify "^4.3.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^4.3.1"
-    gatsby-plugin-utils "^4.3.1"
+    gatsby-core-utils "^4.4.0"
+    gatsby-plugin-utils "^4.4.0"
     lodash "^4.17.21"
     probe-image-size "^7.2.3"
     semver "^7.3.8"
-    sharp "^0.31.2"
+    sharp "^0.31.3"
 
 gatsby-plugin-sitemap@^6.4.0:
   version "6.4.0"
