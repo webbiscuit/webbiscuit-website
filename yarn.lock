@@ -1169,7 +1169,7 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.18.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.20.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.20.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.20.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.7.tgz#fcb41a5a70550e04a7b708037c7c32f7f356d8fd"
   integrity sha512-UF0tvkUtxwAgZ5W/KrkHf0Rn0fdnLDU9ScxBrEVNUprE/MzirjK4MJUX1/BVDv00Sv8cljtukVK1aky++X1SjQ==
@@ -3661,12 +3661,7 @@ acorn@^7.4.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
-acorn@^8.0.0, acorn@^8.5.0, acorn@^8.7.1:
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
-  integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
-
-acorn@^8.8.1:
+acorn@^8.0.0, acorn@^8.5.0, acorn@^8.7.1, acorn@^8.8.1:
   version "8.8.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.1.tgz#0a3f9cbecc4ec3bea6f0a80b66ae8dd2da250b73"
   integrity sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==
@@ -6444,7 +6439,7 @@ gatsby-cli@^5.4.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.3.1, gatsby-core-utils@^4.4.0:
+gatsby-core-utils@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.4.0.tgz#458673d22be3eb511ab8e12be4ea233a74591531"
   integrity sha512-/ibilcGENKH6qqkcT17SIZgc2kjZn3HiGpD+ixbXYkMGqHiM5pj9XIHjy3DfvZvDt2ujkYV5EinmUdqx7CI81w==
@@ -6555,10 +6550,10 @@ gatsby-plugin-mdx-source-name@^1.0.1:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx-source-name/-/gatsby-plugin-mdx-source-name-1.0.1.tgz#729615aac57a55bb61e5c5df46067f64ea185cb7"
   integrity sha512-D8DAOI84ZoWmx3c6BFYuKEnQc+Y1IU+VMhTJZbIOcKbQaoROKx66TkvjLbdHSlrpQ6Skozmi+b6NNrwIyZunzw==
 
-gatsby-plugin-mdx@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.3.1.tgz#19d23a5b78848a4a96a9150927d863074c910ba6"
-  integrity sha512-hupZ74xO5RNbo14r+gwF4uSJ/rq1ByoDaeksIAZgou+4psBPk/K7yaQ9VJB+NHjRr0+K3dJlgBr9dw0be7ZV7A==
+gatsby-plugin-mdx@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.4.0.tgz#678129849eef55bed40dae979f84d65fe78d5b3c"
+  integrity sha512-zZlSKAibG1zsEBrSJBBw2xhbhUzuNk1t8SrRKiT4e59dUoTsPYpWUnkqDaniWWp4Aeoe232d17eFYBmCoeN01A==
   dependencies:
     "@mdx-js/mdx" "^2.1.5"
     acorn "^8.8.1"
@@ -6567,8 +6562,8 @@ gatsby-plugin-mdx@^5.3.1:
     deepmerge "^4.2.2"
     estree-util-build-jsx "^2.2.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^4.3.1"
-    gatsby-plugin-utils "^4.3.1"
+    gatsby-core-utils "^4.4.0"
+    gatsby-plugin-utils "^4.4.0"
     gray-matter "^4.0.3"
     mdast-util-mdx "^2.0.0"
     mdast-util-to-hast "^10.2.0"
@@ -6646,7 +6641,7 @@ gatsby-plugin-typescript@^5.4.0:
     "@babel/runtime" "^7.20.7"
     babel-plugin-remove-graphql-queries "^5.4.0"
 
-gatsby-plugin-utils@^4.3.1, gatsby-plugin-utils@^4.4.0:
+gatsby-plugin-utils@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.4.0.tgz#5a9ce478d3ccb3ea7217886987f87e0d9565736b"
   integrity sha512-oS96PobrmXyOIX6Cqo6RpHykBC8SbIYF6iZcIastR+bcFQRWojFaHP1euFHQ3sVyeVc9SyxBGDHRS5WG+SvAog==
@@ -11852,17 +11847,7 @@ vfile-message@^3.0.0:
     "@types/unist" "^2.0.0"
     unist-util-stringify-position "^3.0.0"
 
-vfile@^5.0.0:
-  version "5.3.5"
-  resolved "https://registry.yarnpkg.com/vfile/-/vfile-5.3.5.tgz#ec2e206b1414f561c85b7972bb1eeda8ab47ee61"
-  integrity sha512-U1ho2ga33eZ8y8pkbQLH54uKqGhFJ6GYIHnnG5AhRpAh3OWjkrRHKa/KogbmQn8We+c0KVV3rTOgR9V/WowbXQ==
-  dependencies:
-    "@types/unist" "^2.0.0"
-    is-buffer "^2.0.0"
-    unist-util-stringify-position "^3.0.0"
-    vfile-message "^3.0.0"
-
-vfile@^5.3.6:
+vfile@^5.0.0, vfile@^5.3.6:
   version "5.3.6"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-5.3.6.tgz#61b2e70690cc835a5d0d0fd135beae74e5a39546"
   integrity sha512-ADBsmerdGBs2WYckrLBEmuETSPyTD4TuLxTrw0DvjirxW1ra4ZwkbzG8ndsv3Q57smvHxo677MHaQrY9yxH8cA==
