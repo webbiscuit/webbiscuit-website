@@ -27,7 +27,7 @@
     "@sindresorhus/slugify": "1.1.2",
     "framer-motion": "^8.5.2",
     "gatsby": "^5.5.0",
-    "gatsby-plugin-image": "^3.4.0",
+    "gatsby-plugin-image": "^3.5.0",
     "gatsby-plugin-manifest": "^5.5.0",
     "gatsby-plugin-mdx": "^5.5.0",
     "gatsby-plugin-mdx-source-name": "^1.0.1",
