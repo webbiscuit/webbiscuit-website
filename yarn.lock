@@ -6532,10 +6532,10 @@ gatsby-plugin-mdx-source-name@^1.0.1:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx-source-name/-/gatsby-plugin-mdx-source-name-1.0.1.tgz#729615aac57a55bb61e5c5df46067f64ea185cb7"
   integrity sha512-D8DAOI84ZoWmx3c6BFYuKEnQc+Y1IU+VMhTJZbIOcKbQaoROKx66TkvjLbdHSlrpQ6Skozmi+b6NNrwIyZunzw==
 
-gatsby-plugin-mdx@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.5.0.tgz#3d83650c939ce165d8e710e9b64854076ef7ecdd"
-  integrity sha512-LHqC7sIC+e7DA1UvA43ZoE/LYGLo4Xj4GT/4iW8PuXjhNtFaq6iDpcqxKH7Sbtgcvyr3k50Dxl2lrK4AU/DNIw==
+gatsby-plugin-mdx@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.6.0.tgz#b19818723fd7c489e2aa0f9bdfe2a1a32190ee2d"
+  integrity sha512-eudAmdRwwlhYbgOoZofrVluAc3FQen+irHB6w/STFBTgXvH+jqM0mjsZrvbc9uUc4AL0wlKwGJn/rd6q62boRw==
   dependencies:
     "@mdx-js/mdx" "^2.1.5"
     acorn "^8.8.1"
@@ -6544,8 +6544,8 @@ gatsby-plugin-mdx@^5.5.0:
     deepmerge "^4.2.2"
     estree-util-build-jsx "^2.2.0"
     fs-extra "^11.1.0"
-    gatsby-core-utils "^4.5.0"
-    gatsby-plugin-utils "^4.5.0"
+    gatsby-core-utils "^4.6.0"
+    gatsby-plugin-utils "^4.6.0"
     gray-matter "^4.0.3"
     mdast-util-mdx "^2.0.0"
     mdast-util-to-hast "^10.2.0"
