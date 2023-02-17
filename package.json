@@ -20,7 +20,7 @@
     "@chakra-ui/gatsby-plugin": "^3.1.1",
     "@chakra-ui/react": "^2.5.0",
     "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/styled": "^11.10.6",
     "@fontsource/figtree": "^4.5.3",
     "@fontsource/spline-sans-mono": "^4.5.3",
     "@mdx-js/react": "^2.3.0",
