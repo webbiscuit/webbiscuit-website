@@ -31,7 +31,7 @@
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-mdx": "^5.7.0",
     "gatsby-plugin-mdx-source-name": "^1.0.1",
-    "gatsby-plugin-no-sourcemaps": "^5.7.0",
+    "gatsby-plugin-no-sourcemaps": "^5.8.0",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-sitemap": "^6.8.0",
     "gatsby-remark-images": "^7.7.0",
