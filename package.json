@@ -25,7 +25,7 @@
     "@fontsource/spline-sans-mono": "^4.5.3",
     "@mdx-js/react": "^2.3.0",
     "@sindresorhus/slugify": "1.1.2",
-    "framer-motion": "^10.12.7",
+    "framer-motion": "^10.12.9",
     "gatsby": "^5.9.1",
     "gatsby-plugin-image": "^3.9.0",
     "gatsby-plugin-manifest": "^5.9.0",
