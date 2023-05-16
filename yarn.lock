@@ -6572,10 +6572,10 @@ gatsby-plugin-mdx@^5.9.0:
     unist-util-visit "^4.1.1"
     vfile "^5.3.6"
 
-gatsby-plugin-no-sourcemaps@^5.9.0:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-5.9.0.tgz#ca3469f2360c8aa8d9396fabfa95cee1e42f3b67"
-  integrity sha512-WcBUu9ZMKXQY35tf0uH0IBI7OQXCOn2Jdo9OMjYk/9g5JNFOkz5nGpTxPOLJbBO/F/GYCbRkVJQ25ZpIoyu9EQ==
+gatsby-plugin-no-sourcemaps@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-5.10.0.tgz#2a29ba50f9403794b827f1c4476469957caed4aa"
+  integrity sha512-u7SzFl3M79E7qjvxwseDA592764NeGQmBqalV0CPS3Tl4LlzW3G3OwLZNP5x34J90GbhFZU3lEPZCxh3YYc5/A==
   dependencies:
     "@babel/runtime" "^7.20.13"
 
