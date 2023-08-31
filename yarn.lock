@@ -2187,10 +2187,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.0.9.tgz#90714c159757c53a9304c8e7f34ec8adc6ad7cd5"
   integrity sha512-q9HEmGRqSnq1F2rLz80lxkdBQCFpGDWipmQT3IDhM9ee5uZBhE/VgR8N9gba/Y+YwS3ORoRRFDp8+oYGa5THeA==
 
-"@fontsource/spline-sans-mono@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/spline-sans-mono/-/spline-sans-mono-5.0.8.tgz#48af1fe5e86ece830b1dee05822f201cae0e2c66"
-  integrity sha512-vSnXGh0EdRplq8fZaykpbwqmfevBXKywV7UhOt2+bLI5Skvj+ghBGvMoP6j7p42mp3Nxk49Xnzg+0zzdhmkXZw==
+"@fontsource/spline-sans-mono@^5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/spline-sans-mono/-/spline-sans-mono-5.0.11.tgz#b7c67f6ad1a7c9c2b6e80d86303ecf115e8a8d8e"
+  integrity sha512-vI+yUmwVE1EiKv6wLAiV9/EqYbOe1a6MWpQPqyihAmrMUHDOekvBf+ubNlo0WgjoGnI6HwhTwqE92tNxG8HCFw==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@^2.12.0":
   version "2.12.0"
