@@ -2182,10 +2182,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/figtree@^5.0.11":
-  version "5.0.11"
-  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.0.11.tgz#6db24fc790730fee77d24be034e43f9d3476e967"
-  integrity sha512-4ckJlzOVeQJxCv/If8Vl2rYWc6VYLwitBdUNflyD5/3uHgM2a5ZToYoR3mmbbxz5Ank201nYj/LYCWFttx2zTA==
+"@fontsource/figtree@^5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.0.12.tgz#44e80b25e3b2f3038b0ec7418c5700ef1c56bb25"
+  integrity sha512-b9M2xEoqQ6ryXg9QzVroXJDcAxpDa+nvLMhLKq3FE6Qf7k3ngFWDaiqjf0fANUa3rZnM4HfAKcJxDeUtwFNE9w==
 
 "@fontsource/spline-sans-mono@^5.0.11":
   version "5.0.11"
