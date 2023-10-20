@@ -6689,10 +6689,10 @@ gatsby-plugin-page-creator@^5.12.2:
     globby "^11.1.0"
     lodash "^4.17.21"
 
-gatsby-plugin-sharp@^5.12.1:
-  version "5.12.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.12.1.tgz#440f8414d3102e78f963f10e7d9bb66ff896e28e"
-  integrity sha512-IJFBL+m1H5RMs4rRiGiZa5NreKxRzycUzAVj17upxs3DTUysSlwoIORGEYJfIJP+bM2p7RjMccpEAqcrXQ8K5g==
+gatsby-plugin-sharp@^5.12.2:
+  version "5.12.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.12.2.tgz#2232c975be071fc766292fa5612b5eacb4115411"
+  integrity sha512-NjlqPxnuAhgy/WBPmMUqbTJ9ehh/qiNWUrJAOv2wDJaTcSEpZPqL3lI84yj2qRHF64iIoEWYSx31B4Sd0Mpw5Q==
   dependencies:
     "@babel/runtime" "^7.20.13"
     async "^3.2.4"
@@ -6701,7 +6701,7 @@ gatsby-plugin-sharp@^5.12.1:
     filenamify "^4.3.0"
     fs-extra "^11.1.1"
     gatsby-core-utils "^4.12.0"
-    gatsby-plugin-utils "^4.12.1"
+    gatsby-plugin-utils "^4.12.2"
     lodash "^4.17.21"
     probe-image-size "^7.2.3"
     semver "^7.5.3"
