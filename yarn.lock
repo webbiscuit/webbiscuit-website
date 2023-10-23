@@ -2243,10 +2243,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/figtree@^5.0.16":
-  version "5.0.16"
-  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.0.16.tgz#b12a36a1218ed0f71b6efc6f68efc0a0d94c77b9"
-  integrity sha512-UVixe2odM1xSlhaW9JQ7tQxML//6m0wsa34sVd0no88lBI60FwK+s8/Z4G6K3Gxov/gfsJqc2z92DKesd8AyHg==
+"@fontsource/figtree@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.0.17.tgz#c813e1cee594819f1b1cfd0b5b07ddb96cfd9a6b"
+  integrity sha512-NIEMRyxPg7Ce9At12vTRXja/bYtODbw+0a3ygfg1YgFpF2vRRQRcj8sipZMc142NNZH75popdjPrhUZusss40w==
 
 "@fontsource/spline-sans-mono@^5.0.16":
   version "5.0.16"
@@ -6730,7 +6730,7 @@ gatsby-plugin-typescript@^5.12.0:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.12.0"
 
-gatsby-plugin-utils@^4.12.1, gatsby-plugin-utils@^4.12.2:
+gatsby-plugin-utils@^4.12.2:
   version "4.12.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.12.2.tgz#8e6d3ceaca1f485ddf1e7da674b57c067564dd52"
   integrity sha512-N5d+fxPd7cZ9KeTl0bHF1JM4MDB2hazXbcOI2gxS9rIL0vgbyBT/ffJ9uczNwJwQuGQPOWdXO6eCspjT4zKcqw==
