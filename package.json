@@ -28,7 +28,7 @@
     "framer-motion": "^10.16.4",
     "gatsby": "^5.12.8",
     "gatsby-plugin-image": "^3.12.2",
-    "gatsby-plugin-manifest": "^5.12.2",
+    "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-mdx": "^5.12.2",
     "gatsby-plugin-mdx-source-name": "^1.0.1",
     "gatsby-plugin-no-sourcemaps": "^5.12.0",
