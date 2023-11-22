@@ -26,7 +26,7 @@
     "@mdx-js/react": "^3.0.0",
     "@sindresorhus/slugify": "1.1.2",
     "framer-motion": "^10.16.5",
-    "gatsby": "^5.12.10",
+    "gatsby": "^5.12.11",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-mdx": "^5.12.3",
