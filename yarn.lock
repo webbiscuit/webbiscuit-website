@@ -6729,7 +6729,7 @@ gatsby-plugin-typescript@^5.13.0:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.13.0"
 
-gatsby-plugin-utils@^4.12.3, gatsby-plugin-utils@^4.13.0:
+gatsby-plugin-utils@^4.13.0:
   version "4.13.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.13.0.tgz#7715055942161fc20e4cc9e90c42cae15c0ff6b9"
   integrity sha512-3qwhM6mUYjorRiD0D0cgmCHcKwroG2d4PlfErnapHJpM/ISGfdBBOfRhPyk2N0u3dbGeb3KQq5gImCCS73bvxg==
@@ -6813,16 +6813,16 @@ gatsby-telemetry@^4.13.0:
     lodash "^4.17.21"
     node-fetch "^2.6.11"
 
-gatsby-transformer-sharp@^5.12.3:
-  version "5.12.3"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-5.12.3.tgz#8f5bfec77b28a6bef99468f5ddb5257bf51c0219"
-  integrity sha512-unVF6XJX2W6XU1NzqsSPAHQJQa8L3XIFROqXsvlLvPNgYDyXdczV33XZGNg8XaLIbPWNo9eHwOPxzS5TvBz4Fg==
+gatsby-transformer-sharp@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-5.13.0.tgz#45447d17ff5f2f9e9a15b39c68dffe7684d07e91"
+  integrity sha512-jGpH1Nf1oNiv3Yze9xNZIrzwyJx2UAkPHhcru6B6TCtYfEbvctEx018LZfgvO2VKnQZkTKPDZOvldGl3d2LdQA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     bluebird "^3.7.2"
     common-tags "^1.8.2"
     fs-extra "^11.1.1"
-    gatsby-plugin-utils "^4.12.3"
+    gatsby-plugin-utils "^4.13.0"
     probe-image-size "^7.2.3"
     semver "^7.5.3"
     sharp "^0.32.6"
