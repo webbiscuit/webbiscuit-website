@@ -29,7 +29,7 @@
     "gatsby": "^5.13.1",
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.13.0",
-    "gatsby-plugin-mdx": "^5.13.0",
+    "gatsby-plugin-mdx": "^5.13.1",
     "gatsby-plugin-mdx-source-name": "^1.0.1",
     "gatsby-plugin-no-sourcemaps": "^5.13.0",
     "gatsby-plugin-sharp": "^5.13.0",
