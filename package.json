@@ -43,7 +43,7 @@
     "remark-emoji": "1.1.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.2",
+    "@types/node": "^20.12.4",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.23",
     "typescript": "^5.4.3"
