@@ -2238,10 +2238,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/figtree@^5.0.22":
-  version "5.0.22"
-  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.0.22.tgz#5e8f3bafae07c7aa06d1cc934a68dfab6b5ad1be"
-  integrity sha512-MLzpEsg9SH4jizB3UMj71T+AUHhphFmec5lcV2WzaWWz5nXZgVHMdV/YdShBopKJrjyxLydhcbbLFIO7HAWKXA==
+"@fontsource/figtree@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.1.0.tgz#460e0170b8c96e326d544a549b9952e716993fa2"
+  integrity sha512-MBSWXnYMqjbxuWIbkgZJw0hi8phwP0eYYyeRSyKjli9TSJKQs/5az5BKfeUgoKSIVystHsP3rT83zyxPTx1KQg==
 
 "@fontsource/spline-sans-mono@^5.0.22":
   version "5.0.22"
