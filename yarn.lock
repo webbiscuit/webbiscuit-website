@@ -1498,10 +1498,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/figtree@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.1.0.tgz#460e0170b8c96e326d544a549b9952e716993fa2"
-  integrity sha512-MBSWXnYMqjbxuWIbkgZJw0hi8phwP0eYYyeRSyKjli9TSJKQs/5az5BKfeUgoKSIVystHsP3rT83zyxPTx1KQg==
+"@fontsource/figtree@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/figtree/-/figtree-5.1.1.tgz#715513b4d141da30c46371dc50c378264719960c"
+  integrity sha512-jVxgbCrtag/f6FYauu+DbQJR7TvM43IyX2iNcx8QmmEluzyPZ+FVRul5t0OV9k52fDi6nBLF/8709AAGYv7ZmA==
 
 "@fontsource/spline-sans-mono@^5.1.0":
   version "5.1.0"
