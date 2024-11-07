@@ -5857,15 +5857,6 @@ fs-extra@^11.1.1, fs-extra@^11.2.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@^11.2.0:
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.2.0.tgz#e70e17dfad64232287d01929399e0ea7c86b0e5b"
-  integrity sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==
-  dependencies:
-    graceful-fs "^4.2.0"
-    jsonfile "^6.0.1"
-    universalify "^2.0.0"
-
 fs-extra@^9.0.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
@@ -6119,10 +6110,10 @@ gatsby-plugin-mdx@^5.14.0:
     unist-util-visit "^4.1.2"
     vfile "^5.3.7"
 
-gatsby-plugin-no-sourcemaps@^5.13.0:
-  version "5.13.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-5.13.0.tgz#1052a0148ecd623a1df6ac586d0c8fcf7ebae6af"
-  integrity sha512-C6BHpd7W82Ps6oA6IW5UuXxbDyZzvcsz96UMIBkn+n+MCNaoB6AjQDZlPcvZHaxyZ4ovqZnf7TBbvugxgzwq0g==
+gatsby-plugin-no-sourcemaps@^5.14.0:
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-5.14.0.tgz#9aecc0c6530a358412fcb97bf3495ad4dec063d1"
+  integrity sha512-p/Cxn/OOUdrPsOBxQ1TuuwhiHwCVARhLIvHAruc2Zt9xwaK+Zibuq/F6FMoNbaOUwDlVlSiAdkD7OJBQZjL6dA==
   dependencies:
     "@babel/runtime" "^7.20.13"
 
