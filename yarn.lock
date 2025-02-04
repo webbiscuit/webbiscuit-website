@@ -5819,10 +5819,10 @@ fraction.js@^4.2.0:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
-framer-motion@^12.0.9:
-  version "12.0.9"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.0.9.tgz#72183498b99a228fec956f6e2e6eb009a2da9073"
-  integrity sha512-RlcYjcgRSrNq6oN4YyxJk151/Rwhh7Ig3Wqd6xpj2xYwTfvRt+H3PuaOF+Tl5D4ycEiQJXaMy7gbm6/l9PS5nw==
+framer-motion@^12.0.11:
+  version "12.0.11"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.0.11.tgz#ec1c4e3eafcc30c5d3e250a14d110c6a40f6f18d"
+  integrity sha512-1F+YNXr3bSHxt5sCzeCVL56sc4MngbOhdU5ptv02vaepdFYcQd0fZtuAHvFJgMbn5V7SOsaX/3hVqr21ZaCKhA==
   dependencies:
     motion-dom "^12.0.0"
     motion-utils "^12.0.0"
