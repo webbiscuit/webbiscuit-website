@@ -2,4 +2,4 @@ install-cv-prereqs:
     sudo apt install pandoc texlive
 
 cv:
-    pandoc pages/cv/cv.mdx -o output.pdf
+    pandoc pages/cv/cv.mdx -o cv-daniel-childs.pdf
