@@ -6087,10 +6087,10 @@ gatsby-plugin-mdx-source-name@^1.0.1:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx-source-name/-/gatsby-plugin-mdx-source-name-1.0.1.tgz#729615aac57a55bb61e5c5df46067f64ea185cb7"
   integrity sha512-D8DAOI84ZoWmx3c6BFYuKEnQc+Y1IU+VMhTJZbIOcKbQaoROKx66TkvjLbdHSlrpQ6Skozmi+b6NNrwIyZunzw==
 
-gatsby-plugin-mdx@^5.14.0:
-  version "5.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.14.0.tgz#5f95124cae148bd5e91559198d983c562a88b0a4"
-  integrity sha512-tJJmR+sRrWFRuUKUq5bJLWcLXo6FTP06tfE+7yN2foKcW6+SphY3EVvqiTnCzNAkpvUCP3EASLMg2WGWIVzi4A==
+gatsby-plugin-mdx@^5.14.1:
+  version "5.14.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.14.1.tgz#08ee4149278386c66205cffa5fa5669ccdbb2494"
+  integrity sha512-BkrK10XqWkvYJNraSnPt/Ih/TmSjEzSWOEyWMSOJhHC+xpdqGakKKbkHButGQLMwC4W+v7jjQ3ZCbDQLXxZ5ZQ==
   dependencies:
     "@mdx-js/mdx" "^2.3.0"
     acorn "^8.8.2"
